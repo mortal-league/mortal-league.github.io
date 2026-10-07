@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="Read the plain-language ranked Mortal League Beta rules, decisions, champions, and launch checks."
+    />
+    <title>Mortal League Beta Rulebook | Mortal League Beta</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath fill='none' stroke='%23fff36a' stroke-width='6' d='M12 50V14l20 21 20-21v36'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./rules.css" />
+    <script src="./rules.js" defer></script>
+    <script src="../mascot.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#rulebook-content">Skip to rulebook</a>
+
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Mortal League Beta home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path d="M32 7 52 14v16c0 13-8 23-20 29C20 53 12 43 12 30V14Z" />
+            <path d="m22 31 7 7 14-16" />
+          </svg>
+        </span>
+        <span><strong>Mortal League Beta</strong></span>
+      </a>
+      <nav aria-label="League navigation">
+        <a href="../">Home</a>
+        <a href="../mortal-online-2/">MO2 League</a>
+        <a href="../mortal-online-1/">MO1 League</a>
+        <a href="../tools/">Tools</a>
+        <a href="./" aria-current="page">Rulebook</a>
+        <a href="../safety/">Safety</a>
+        <a href="../fundraiser/">Fundraiser</a>
+      </nav>
+      <span class="status-chip"><span></span> Version 1.0 Public Beta</span>
+    </header>
+
+    <main class="rulebook-shell">
+      <section class="rulebook-intro" aria-labelledby="rulebook-title">
+        <div class="intro-copy">
+          <h1 id="rulebook-title">Rulebook</h1>
+          <p>
+            Version 1.0 has 13 set terms and 103 rules. Entry stays open. Every ladder awards
+            separate Territory, War, and Guild Reputation titles.
+          </p>
+        </div>
+
+        <aside class="authority-card" aria-label="Rulebook status">
+          <div class="authority-card-top">
+            <span class="document-state">Version 1.0 Public Beta</span>
+            <span>Updated October 6, 2026</span>
+          </div>
+          <strong>These rules control the ranked Beta.</strong>
+          <p>
+            Beta rules may improve through public notice. Approved scores remain valid unless a final ruling or named correction changes them. No Star Vault approval is claimed.
+          </p>
+          <div class="authority-actions">
+            <a class="primary-button" href="../downloads/mortal-league-beta-rulebook-v1.0.pdf" download>Download printable PDF</a>
+            <a class="primary-button" href="./mortal-league-beta-rulebook-v1.0.txt" download>Download plain text</a>
+            <button class="secondary-button" type="button" id="print-rulebook">Print rulebook</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="authority-map" aria-label="Rulebook authority map">
+        <article>
+          <span class="map-code settled">Settled</span>
+          <strong id="count-settled">10</strong>
+          <p>Rules that are already set.</p>
+        </article>
+        <article>
+          <span class="map-code adopted">Adopted</span>
+          <strong id="count-adopted">13</strong>
+          <p>Set terms for Mortal League Beta.</p>
+        </article>
+        <article>
+          <span class="map-code decision">League</span>
+          <strong id="count-decisions">12</strong>
+          <p>League decisions are complete.</p>
+        </article>
+        <article>
+          <span class="map-code publisher">Star Vault</span>
+          <strong id="count-publisher">11</strong>
+          <p>Guidance requests. No approval is claimed.</p>
+        </article>
+      </section>
+
+      <section class="rule-tools" aria-label="Rulebook controls">
+        <label class="search-box" for="rule-search">
+          <span>Search the rules</span>
+          <input id="rule-search" type="search" placeholder="Try proof, Outpost, appeal, ref, or DDoS" autocomplete="off" />
+        </label>
+        <div class="filter-row" role="group" aria-label="Filter rulebook sections">
+          <button type="button" class="filter-button" data-filter="all" aria-pressed="false">All</button>
+          <button type="button" class="filter-button" data-filter="settled" aria-pressed="false">Settled</button>
+          <button type="button" class="filter-button" data-filter="adopted" aria-pressed="false">Set terms</button>
+          <button type="button" class="filter-button" data-filter="operating" aria-pressed="false">Season rules</button>
+          <button type="button" class="filter-button" data-filter="decision" aria-pressed="false">League decisions</button>
+          <button type="button" class="filter-button" data-filter="publisher" aria-pressed="false">Star Vault</button>
+          <button type="button" class="filter-button" data-filter="research" aria-pressed="false">Research</button>
+          <button type="button" class="filter-button" data-filter="blocker" aria-pressed="false">Launch checks</button>
+        </div>
+        <div class="view-controls">
+          <p id="result-count" role="status" aria-live="polite">Loading rulebook</p>
+          <div>
+            <button type="button" class="text-control" id="expand-visible">Expand visible</button>
+            <button type="button" class="text-control" id="collapse-visible">Collapse visible</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="rulebook-layout">
+        <aside class="section-index" aria-label="Rulebook sections">
+          <p class="eyebrow">Contents</p>
+          <a href="#settled-rules"><span>01</span> Settled rules</a>
+          <a href="#adopted-parameters"><span>02</span> Set terms</a>
+          <a href="#operating-rules"><span>03</span> Season rules</a>
+          <a href="#decisions"><span>04</span> League decisions</a>
+          <a href="#star-vault-questions"><span>05</span> Star Vault questions</a>
+          <a href="#research-basis"><span>06</span> Research basis</a>
+          <a href="#launch-gates"><span>07</span> Launch checks</a>
+        </aside>
+
+        <div class="rulebook-content" id="rulebook-content" aria-live="polite" aria-busy="true">
+          <section class="loading-rules" aria-label="Loading rulebook">
+            <span></span>
+            <span></span>
+            <span></span>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer><strong>Mortal League Beta</strong></footer>
+  </body>
+</html>

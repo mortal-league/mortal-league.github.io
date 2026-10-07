@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="A local Mortal Online 1 skill planner with an editable Primary skill budget." />
+    <title>MO1 Skill Planner | Mortal League Beta</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath fill='none' stroke='%23fff36a' stroke-width='6' d='M12 50V14l20 21 20-21v36'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../tools.css" />
+    <script src="./app.js" defer></script>
+    <script src="../../mascot.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#planner">Skip to Skill Planner</a>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="Mortal League Beta home"><span><strong>Mortal League Beta</strong></span></a>
+      <nav aria-label="League navigation"><a href="../../">Home</a><a href="../../mortal-online-2/">MO2 League</a><a href="../../mortal-online-1/">MO1 League</a><a href="../" aria-current="page">Tools</a><a href="../../rules/">Rulebook</a><a href="../../safety/">Safety</a><a href="../../fundraiser/">Fundraiser</a></nav>
+      <span class="privacy-chip"><span></span> Saved on this device</span>
+    </header>
+
+    <main class="tools-shell" id="planner">
+      <section class="tool-header">
+        <div><h1>MO1 Skill Planner</h1><p>Set a Primary skill budget. Add skills. Compare current and target points.</p></div>
+        <a class="secondary-button" href="../../mortal-online-1/">Back to MO1</a>
+      </section>
+      <div class="planner-stats" aria-label="Skill totals">
+        <label class="receipt-stat"><span>Primary budget</span><input id="point-budget" type="number" min="0" max="5000" step="1" value="1000" /></label>
+        <div class="receipt-stat"><span>Current Primary</span><strong id="current-total">0</strong></div>
+        <div class="receipt-stat"><span>Target Primary</span><strong id="target-total">0</strong></div>
+        <div class="receipt-stat"><span>Target points left</span><strong id="remaining-total">1,000</strong></div>
+      </div>
+
+      <div class="builder-layout">
+        <section class="tool-panel" aria-labelledby="add-title">
+          <div class="panel-heading"><h2 id="add-title">Add a skill</h2><span>0 to 100 points</span></div>
+          <form id="skill-form">
+            <div class="field-row two-up">
+              <label><span>Skill name</span><input id="skill-name" type="text" maxlength="80" required placeholder="Anatomy" /></label>
+              <label><span>Skill type</span><select id="skill-type"><option>Primary</option><option>Secondary</option><option>Deva</option></select></label>
+            </div>
+            <div class="field-row two-up">
+              <label><span>Category</span><select id="skill-category"><option>Action</option><option>Learning</option><option>World</option><option>Crafting</option><option>Combat</option><option>Other</option></select></label>
+              <label><span>Current points</span><input id="skill-current" type="number" min="0" max="100" value="0" required /></label>
+            </div>
+            <div class="field-row"><label><span>Target points</span><input id="skill-target" type="number" min="0" max="100" value="100" required /></label></div>
+            <div class="form-actions"><button class="primary-button" type="submit">Add skill</button><span id="form-status" role="status" aria-live="polite"></span></div>
+          </form>
+
+          <div class="panel-heading list-heading"><h2>Build skills</h2><button class="text-button" id="clear-skills" type="button">Clear build</button></div>
+          <div class="skill-list" id="skill-list"></div>
+        </section>
+
+        <aside class="receipt-panel" aria-labelledby="backup-title">
+          <div class="panel-heading"><h2 id="backup-title">Build backup</h2><span>JSON</span></div>
+          <p>Download a copy before you clear browser data or move devices.</p>
+          <div class="stacked-actions"><button class="primary-button" id="copy-build" type="button">Copy build</button><button class="secondary-button" id="download-build" type="button">Download JSON</button><label class="secondary-button file-button" for="import-build">Import JSON</label><input class="visually-hidden" id="import-build" type="file" accept="application/json,.json" /></div>
+          <p class="tool-notice" id="backup-status" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </main>
+    <footer><strong>Mortal Online 1 League</strong></footer>
+  </body>
+</html>

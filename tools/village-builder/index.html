@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="A private Mortal Online 2 village building calculator." />
+    <title>Village Builder | Mortal League Beta</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath fill='none' stroke='%23fff36a' stroke-width='6' d='M12 50V14l20 21 20-21v36'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../tools.css" />
+    <script src="./app.js" defer></script>
+    <script src="../../mascot.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#builder">Skip to Village Builder</a>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="Mortal League Beta home">
+        <span><strong>Mortal League Beta</strong></span>
+      </a>
+      <nav aria-label="League navigation">
+        <a href="../../">Home</a>
+        <a href="../../mortal-online-2/">MO2 League</a>
+        <a href="../../mortal-online-1/">MO1 League</a>
+        <a href="../" aria-current="page">Tools</a>
+        <a href="../../rules/">Rulebook</a>
+        <a href="../../safety/">Safety</a>
+        <a href="../../fundraiser/">Fundraiser</a>
+      </nav>
+      <span class="privacy-chip"><span></span> Saved on this device</span>
+    </header>
+
+    <main class="tools-shell" id="builder">
+      <section class="tool-header">
+        <div>
+          <h1>Village Builder</h1>
+          <p>Pick a building, choose its final tier, and add it to the plan.</p>
+        </div>
+        <a class="secondary-button" href="../">Back to League Tools</a>
+      </section>
+
+      <div class="builder-layout">
+        <section class="tool-panel" aria-labelledby="structures-title">
+          <div class="panel-heading">
+            <h2 id="structures-title">Choose a structure</h2>
+            <span id="structure-count">0 structures</span>
+          </div>
+
+          <div class="builder-controls">
+            <label class="control-label" for="structure-search">
+              Search
+              <input id="structure-search" type="search" placeholder="Bank, house, barracks…" autocomplete="off" />
+            </label>
+            <label class="control-label" for="category-filter">
+              Category
+              <select id="category-filter">
+                <option value="all">All</option>
+                <option value="Housing">Housing</option>
+                <option value="Administration">Administration</option>
+                <option value="Supply">Supply</option>
+                <option value="Crafting">Crafting</option>
+                <option value="Defense">Defense</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="structure-grid" id="structure-grid" aria-live="polite"></div>
+
+          <div class="tier-row" id="tier-row" hidden>
+            <label class="control-label" for="tier-select">
+              <span id="selected-structure">Selected structure</span>
+              <select id="tier-select"></select>
+              <small>Totals include each step up to this tier.</small>
+            </label>
+            <button class="primary-button" type="button" id="add-structure">Add to project</button>
+          </div>
+
+          <div class="panel-heading">
+            <h2>Your project</h2>
+            <button class="text-button" type="button" id="clear-project">Clear project</button>
+          </div>
+          <div class="project-list" id="project-list"></div>
+        </section>
+
+        <aside class="receipt-panel" aria-labelledby="receipt-title">
+          <div class="panel-heading">
+            <h2 id="receipt-title">Project totals</h2>
+            <span id="project-count">0 items</span>
+          </div>
+          <div class="receipt-grid">
+            <div class="receipt-stat"><span>Stone</span><strong id="total-stone">0</strong></div>
+            <div class="receipt-stat"><span>Wood</span><strong id="total-wood">0</strong></div>
+            <div class="receipt-stat"><span>Metal</span><strong id="total-metal">0</strong></div>
+            <div class="receipt-stat"><span>Prominence</span><strong id="total-prom">0</strong></div>
+            <div class="receipt-stat"><span>Plan gold</span><strong id="total-gold">0</strong></div>
+            <div class="receipt-stat"><span>Guild reserve</span><strong id="total-deposit">0</strong></div>
+            <div class="receipt-stat wide"><span>Total gold funding</span><strong id="total-all-gold">0</strong></div>
+          </div>
+          <p class="empty-state" id="receipt-note">Add a structure to create a receipt.</p>
+          <div class="receipt-actions">
+            <button class="primary-button" type="button" id="copy-receipt">Copy receipt</button>
+            <button class="secondary-button" type="button" id="download-receipt">Download</button>
+          </div>
+          <p class="tool-notice" id="copy-status" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </main>
+
+    <footer><strong>Mortal League Beta</strong></footer>
+  </body>
+</html>

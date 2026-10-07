@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="A private report helper for Mortal League Beta players."
+    />
+    <title>Mortal League Beta | Report Assistant</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath fill='none' stroke='%23fff36a' stroke-width='6' d='M12 50V14l20 21 20-21v36'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../app.js" defer></script>
+    <script src="../mascot.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#report-assistant">Skip to Report Assistant</a>
+
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Mortal League Beta home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path d="M32 7 52 14v16c0 13-8 23-20 29C20 53 12 43 12 30V14Z" />
+            <path d="m22 31 7 7 14-16" />
+          </svg>
+        </span>
+        <span><strong>Mortal League Beta</strong></span>
+      </a>
+      <nav aria-label="League navigation">
+        <a href="../">Home</a>
+        <a href="../mortal-online-2/">MO2 League</a>
+        <a href="../mortal-online-1/">MO1 League</a>
+        <a href="../tools/">Tools</a>
+        <a href="../rules/">Rulebook</a>
+        <a href="./" aria-current="page">Safety</a>
+        <a href="../fundraiser/">Fundraiser</a>
+      </nav>
+      <span class="privacy-chip"><span></span> Private by default</span>
+    </header>
+
+    <main>
+      <section class="assistant-shell" id="report-assistant">
+        <div class="page-intro">
+          <h1>Safety Report Builder</h1>
+          <p>
+            Choose what happened and your region. This tool makes a short report, a proof list,
+            and a link to the right official service.
+          </p>
+          <div class="trust-row" aria-label="Privacy and verification information">
+            <a href="../rules/">Read the Mortal League Beta Rulebook</a>
+            <span>No location detection</span>
+            <span>Your draft stays here and clears after 24 hours</span>
+            <span>Official links verified September 11, 2026</span>
+          </div>
+        </div>
+
+        <section class="danger-check" aria-labelledby="danger-title">
+          <div>
+            <h2 id="danger-title">Is anyone in immediate danger?</h2>
+            <p>Call emergency services now. Do not wait to gather proof.</p>
+          </div>
+          <div class="segmented" role="radiogroup" aria-label="Immediate danger">
+            <input type="radio" name="danger" id="danger-no" value="no" form="report-form" />
+            <label for="danger-no">No</label>
+            <input type="radio" name="danger" id="danger-yes" value="yes" form="report-form" />
+            <label for="danger-yes">Yes</label>
+          </div>
+          <div class="danger-action" id="danger-action" hidden></div>
+        </section>
+
+        <div class="workspace">
+          <form class="report-builder" id="report-form" novalidate>
+            <div class="form-heading">
+              <div>
+                <p class="eyebrow">Report builder</p>
+                <h2>Share only what this tool needs</h2>
+              </div>
+              <button class="text-button" type="button" id="clear-draft">Delete draft</button>
+            </div>
+
+            <fieldset>
+              <legend><span>1</span> What happened?</legend>
+              <p class="field-help">Pick the closest match. Officials decide which law may apply.</p>
+              <div class="choice-grid incident-grid">
+                <label class="choice-card">
+                  <input type="radio" name="incident" value="threat" required />
+                  <strong>Threat or swatting</strong>
+                  <small>Threats of harm, threats to find you, or a false emergency call</small>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incident" value="stalking" />
+                  <strong>Stalking or harassment</strong>
+                  <small>Unwanted contact, fear, or abuse aimed at you</small>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incident" value="ddos" />
+                  <strong>DDoS or network attack</strong>
+                  <small>Lost service, a break-in, or demands tied to an attack</small>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incident" value="doxxing" />
+                  <strong>Doxxing or privacy exposure</strong>
+                  <small>Personal information posted, shared, or threatened</small>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incident" value="account" />
+                  <strong>Account compromise</strong>
+                  <small>Someone enters your account, acts as you, or steals a password</small>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incident" value="fraud" />
+                  <strong>Fraud or extortion</strong>
+                  <small>Theft, blackmail, scams, or demands for money</small>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incident" value="intimate" />
+                  <strong>Intimate image abuse</strong>
+                  <small>Private sexual images shared or threatened without consent</small>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incident" value="rules" />
+                  <strong>Game or platform violation</strong>
+                  <small>Cheating, exploits, hate, or abuse on a game or platform</small>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field-row two-up">
+              <label>
+                <span><b>2</b> Your country or region</span>
+                <select name="region" id="region" required>
+                  <option value="">Choose your region</option>
+                  <option value="us">United States</option>
+                  <option value="canada">Canada</option>
+                  <option value="uk">UK: England, Wales, or Northern Ireland</option>
+                  <option value="scotland">UK: Scotland</option>
+                  <option value="eu">European Union or EEA</option>
+                  <option value="australia">Australia</option>
+                  <option value="nz">New Zealand</option>
+                  <option value="other">Another country</option>
+                </select>
+                <small>You choose this. The site does not read your IP location.</small>
+              </label>
+
+              <label>
+                <span><b>3</b> Primary platform</span>
+                <select name="platform" id="platform" required>
+                  <option value="">Choose the primary platform</option>
+                  <option value="mo1">Mortal Online 1</option>
+                  <option value="mo2">Mortal Online 2</option>
+                  <option value="discord">Discord</option>
+                  <option value="steam">Steam</option>
+                  <option value="twitch">Twitch</option>
+                  <option value="youtube">YouTube</option>
+                  <option value="epic">Epic Games</option>
+                  <option value="network">Internet provider or network</option>
+                  <option value="other">Another service</option>
+                </select>
+                <small>You may also report on each platform involved.</small>
+              </label>
+            </div>
+
+            <fieldset class="details-fields">
+              <legend><span>4</span> Prepare the facts</legend>
+              <p class="field-help">
+                These details stay in this browser. Skip anything unsafe or unknown.
+              </p>
+              <div class="field-row two-up">
+                <label>
+                  <span>When did it happen?</span>
+                  <input type="datetime-local" name="occurred" />
+                </label>
+                <label>
+                  <span>Your timezone</span>
+                  <input type="text" name="timezone" placeholder="Example: PDT or UTC−7" />
+                </label>
+              </div>
+              <label>
+                <span>Accounts, character names, or stable user IDs involved</span>
+                <input
+                  type="text"
+                  name="subjects"
+                  placeholder="Use exact names and IDs. Do not guess a real identity."
+                />
+              </label>
+              <label>
+                <span>Message links, profile URLs, ticket numbers, or server/channel names</span>
+                <textarea name="links" rows="3" placeholder="One item per line"></textarea>
+              </label>
+              <label>
+                <span>What happened?</span>
+                <textarea
+                  name="narrative"
+                  rows="6"
+                  placeholder="Write a short timeline. Say what happened and what came next."
+                ></textarea>
+              </label>
+              <label>
+                <span>Impact, loss, or immediate safety concern</span>
+                <textarea
+                  name="impact"
+                  rows="3"
+                  placeholder="Service downtime, money lost, fear for safety, account access, or other impact"
+                ></textarea>
+              </label>
+              <label>
+                <span>Evidence you kept</span>
+                <textarea
+                  name="evidence"
+                  rows="3"
+                  placeholder="Original screenshots, message URLs, video, logs, receipts, or provider tickets"
+                ></textarea>
+              </label>
+            </fieldset>
+
+            <div class="form-actions">
+              <button class="primary-button" type="submit">Build my reporting plan</button>
+              <p id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <aside class="report-plan" id="report-plan" aria-live="polite">
+            <div class="plan-sticky">
+              <div class="plan-heading">
+                <div>
+                  <p class="eyebrow">Your next steps</p>
+                  <h2>Reporting plan</h2>
+                </div>
+                <span class="plan-count" id="plan-count">0</span>
+              </div>
+              <div class="empty-plan" id="empty-plan">
+                <div class="empty-mark" aria-hidden="true">1</div>
+                <h3>Start with the incident and region</h3>
+                <p>Your official links and next steps will appear here.</p>
+              </div>
+              <div id="plan-results" hidden>
+                <div id="route-cards" class="route-cards"></div>
+                <section class="packet" id="packet">
+                  <div class="packet-heading">
+                    <div>
+                      <p class="eyebrow">Copy once, reuse</p>
+                      <h3>Incident summary</h3>
+                    </div>
+                    <button class="icon-button" type="button" id="copy-summary">Copy</button>
+                  </div>
+                  <pre id="summary-output"></pre>
+                  <div class="packet-actions">
+                    <button type="button" id="download-summary">Download .txt</button>
+                    <button type="button" id="print-summary">Print or save PDF</button>
+                  </div>
+                </section>
+                <section class="evidence-list">
+                  <p class="eyebrow">Keep before reporting</p>
+                  <h3>Evidence checklist</h3>
+                  <ul id="evidence-checklist"></ul>
+                </section>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="guidance-section" id="rights">
+        <div class="section-heading">
+          <p class="eyebrow">Know Your Rights</p>
+          <h2>Your safety rights</h2>
+          <p>
+            You may end contact, block an account, save proof, make a report, and ask for help.
+            Game rules and guild fights do not excuse threats, stalking, DDoS attacks, doxxing,
+            fraud, or other crimes.
+          </p>
+        </div>
+        <div class="guidance-grid">
+          <article>
+            <span>01</span>
+            <h3>Leave and block</h3>
+            <p>You do not owe an abusive player a reply or warning.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Report without perfect evidence</h3>
+            <p>Call emergency services when needed. You may be able to add proof later.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Keep your identity private</h3>
+            <p>Share personal details only with a service that needs them.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Use more than one route</h3>
+            <p>Platform, police, cyber, and League reports each have a different job.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guidance-section" id="safe-play">
+        <div class="section-heading">
+          <p class="eyebrow">Safe Gameplay</p>
+          <h2>Safe play</h2>
+        </div>
+        <div class="safety-columns">
+          <div>
+            <h3>Account safety</h3>
+            <ul>
+              <li>Use a different password for email, Discord, and Steam. Turn on two-step login.</li>
+              <li>Remove old logins and recovery methods you do not control.</li>
+              <li>Keep legal names, addresses, phone numbers, and family details out of public profiles.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Network safety</h3>
+            <ul>
+              <li>Do not share IP addresses, router screenshots, or provider account details.</li>
+              <li>Call your internet provider during an attack. Save the ticket number.</li>
+              <li>Do not retaliate, scan another player, or try to identify them yourself.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Evidence safety</h3>
+            <ul>
+              <li>Save original files, links, dates, times, time zones, and account IDs.</li>
+              <li>Keep one clean copy before you mark, crop, or hide anything.</li>
+              <li>Do not repost threats, private images, or personal details.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="verification-section" aria-labelledby="verification-title">
+        <div>
+          <p class="eyebrow">Source policy</p>
+          <h2 id="verification-title">Official reporting links</h2>
+        </div>
+        <p>
+          This tool links only to official agencies and safety pages. The links were checked on
+          September 11, 2026. Check them often. This is not legal advice. Officials decide if a law
+          was broken.
+        </p>
+      </section>
+    </main>
+
+    <footer><strong>Mortal League Beta</strong></footer>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="A private Mortal Online 2 siege supply calculator." />
+    <title>Siege Planner | Mortal League Beta</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath fill='none' stroke='%23fff36a' stroke-width='6' d='M12 50V14l20 21 20-21v36'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../tools.css" />
+    <script src="./app.js" defer></script>
+    <script src="../../mascot.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#planner">Skip to Siege Planner</a>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="Mortal League Beta home">
+        <span><strong>Mortal League Beta</strong></span>
+      </a>
+      <nav aria-label="League navigation">
+        <a href="../../">Home</a>
+        <a href="../../mortal-online-2/">MO2 League</a>
+        <a href="../../mortal-online-1/">MO1 League</a>
+        <a href="../" aria-current="page">Tools</a>
+        <a href="../../rules/">Rulebook</a>
+        <a href="../../safety/">Safety</a>
+        <a href="../../fundraiser/">Fundraiser</a>
+      </nav>
+      <span class="privacy-chip"><span></span> Saved on this device</span>
+    </header>
+
+    <main class="tools-shell" id="planner">
+      <section class="tool-header">
+        <div>
+          <h1>Siege Planner</h1>
+          <p>Choose a mode, add targets, and check the supply total.</p>
+        </div>
+        <a class="secondary-button" href="../">Back to League Tools</a>
+      </section>
+
+      <section class="mode-picker" id="mode-picker" aria-labelledby="mode-title">
+        <h2 id="mode-title" hidden>Choose siege mode</h2>
+        <button class="mode-button" type="button" data-mode="keep">
+          Keep Siege
+          <small>Includes Keeps, walls, gates, and Supply Lines.</small>
+        </button>
+        <button class="mode-button" type="button" data-mode="normal">
+          Normal Siege
+          <small>Buildings and housing only. Keep defenses stay hidden.</small>
+        </button>
+      </section>
+
+      <div id="planner-view" hidden>
+        <div class="siege-layout">
+          <section class="tool-panel" aria-labelledby="target-title">
+            <div class="panel-heading">
+              <h2 id="target-title">Targets</h2>
+              <button class="text-button" type="button" id="change-mode">Change siege mode</button>
+            </div>
+
+            <div class="siege-toolbar">
+              <label class="control-label" for="target-search">
+                Search targets
+                <input id="target-search" type="search" placeholder="Keep, wall, bank…" autocomplete="off" />
+              </label>
+              <label class="control-label" for="machine-select">
+                Manganon
+                <select id="machine-select">
+                  <option value="wheeled">Wheeled</option>
+                  <option value="stationary">Stationary</option>
+                </select>
+              </label>
+              <label class="control-label" for="supply-lines" id="supply-control">
+                Keep Supply Lines
+                <select id="supply-lines">
+                  <option value="0">0</option>
+                  <option value="1">1 (+5%)</option>
+                  <option value="2">2 (+10%)</option>
+                </select>
+              </label>
+              <label class="check-control" for="buffer-check">
+                <input id="buffer-check" type="checkbox" />
+                Add 10% buffer
+              </label>
+            </div>
+
+            <div class="panel-heading">
+              <h2 id="mode-label">Keep Siege targets</h2>
+              <span id="target-count">0 targets</span>
+            </div>
+            <div class="target-grid" id="target-grid" aria-live="polite"></div>
+          </section>
+
+          <aside class="receipt-panel" aria-labelledby="siege-receipt-title">
+            <div class="panel-heading">
+              <h2 id="siege-receipt-title">Siege totals</h2>
+              <button class="text-button" type="button" id="clear-targets">Clear</button>
+            </div>
+            <div class="receipt-grid">
+              <div class="receipt-stat"><span>Targets</span><strong id="total-targets">0</strong></div>
+              <div class="receipt-stat"><span>Boulders</span><strong id="total-boulders">0</strong></div>
+              <div class="receipt-stat"><span>Manganons</span><strong id="total-manganons">0</strong></div>
+              <div class="receipt-stat"><span>Stone</span><strong id="total-stone">0</strong></div>
+              <div class="receipt-stat"><span>Wood</span><strong id="total-wood">0</strong></div>
+              <div class="receipt-stat"><span>Metal</span><strong id="total-metal">0</strong></div>
+              <div class="receipt-stat"><span>Gold</span><strong id="total-gold">0</strong></div>
+              <div class="receipt-stat"><span>Prominence</span><strong id="total-prom">0</strong></div>
+            </div>
+            <div class="selected-targets" id="selected-targets"></div>
+            <div class="receipt-actions">
+              <button class="primary-button" type="button" id="copy-receipt">Copy receipt</button>
+              <button class="secondary-button" type="button" id="download-receipt">Download</button>
+            </div>
+            <p class="tool-notice" id="copy-status" role="status" aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer><strong>Mortal League Beta</strong></footer>
+  </body>
+</html>

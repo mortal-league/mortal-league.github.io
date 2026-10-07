@@ -1,0 +1,371 @@
+Mortal League Beta Rulebook Version 1.0
+
+Document status: Version 1.0 was updated on October 6, 2026. It sets the rules for a full ranked Beta launch. Guild entry stays open after the registration service launches. The three ladders award separate Territory, War, and Guild Reputation champions. Beta rules may improve through public notice. Approved scores stay valid unless a final ruling or named correction changes them. This is an independent community project. Star Vault does not operate or approve it.
+
+Part One: Settled project rules.
+
+Settled Rule 1, League identity and scope: Mortal League Beta is a player-run contest for Mortal Online 1 and Mortal Online 2. It does not run either game or replace Star Vault. It has power only over people who choose to join. It runs ladders, seasons, scores, events, reviews, appeals, and public records. It does not claim Star Vault approval.
+
+Settled Rule 2, automatic entry and private guild data: Creating a guild in the Guild Point Tracker enters it on three open ladders at zero points. The ladders are MO2 Myrland, MO2 Sarducaa, and combined MO1 Myrland and Sarducaa. Joining a guild adds the player to that guild's open League roster at once. There is no roster lock. Only a report sent through the League action form may enter League review or scoring. Private guild points, proof, notes, resources, tasks, and work history stay private. The League cannot use private guild data to watch players.
+
+Settled Rule 3, Mortal League Beta financial boundary: Mortal League Beta has no fee, prize, stake, escrow, betting, or wager. The League does not hold player items or money. It does not set a gold-to-cash rate or promise payment. Players and officials cannot bet on League events. Wagers may be reviewed for a later season.
+
+Settled Rule 4, identity and privacy: Public pages may show team names, guild tags, chosen character names, and approved contact details. Discord IDs, private user names, legal names, account data, network data, exact locations, and private proof stay private. A ref may remove a public Discord contact and still keep verified ref status.
+
+Settled Rule 5, proof and public records: Original proof stays private. Refs use limited access to review it. Public rulings explain the result without showing private images, clips, IDs, or witness details. The public Integrity Registry shows final findings only. It never shows rumors, open claims, private tips, or unproven names.
+
+Settled Rule 6, final ruling fields: Each final ruling lists the case number, rule, rule version, result, and safe proof summary. It also lists the score or penalty, date, appeal state, and review or end date. A changed ruling gets a clear correction. The registry is not a public list of every scam claim in Mortal Online 2.
+
+Settled Rule 7, safety boundary: Joining the League never allows stalking, doxxing, threats, swatting, account attacks, DDoS attacks, hate, witness abuse, or false claims. Serious reports use the private Player Safety Desk. It sends people to the right League, Star Vault, Discord, Steam, account, network, police, or emergency route. A League ruling may find a League rule break. It does not say that a crime took place.
+
+Settled Rule 8, review steps: A League report saves its proof and posts a safe public summary. Guild leaders and officers serve as refs. A ref cannot rule on their own guild or another direct conflict. A clear Guild Reputation ticket may post provisional points for 48 hours. An objection sends the ticket to an uninvolved ref. Final rulings enter the Integrity Registry.
+
+Settled Rule 9, public score records: The League keeps Territory, War, Guild Reputation, and match results separate. Territory shows land and control. War shows siege and battle results. Guild Reputation shows verified public guild activity. Each ladder names a Territory Champion, War Champion, and Guild Reputation Champion. The League does not combine these records or name one overall champion.
+
+Settled Rule 10, ladder structure: Updated September 27, 2026. MO2 Myrland and MO2 Sarducaa use separate records and scores. MO1 Myrland and Sarducaa share one ladder due to the smaller population. A new guild enters all three ladders. Each League action report names one ladder. Points never cross between ladders.
+
+Part Two: Adopted Mortal League Beta parameters.
+
+Part Two status: These 13 terms control Mortal League Beta. The League reviews Beta values and steps after each season. The terms remain active until a newer rulebook replaces them.
+
+Adopted Parameter 1, season form: Each Mortal League Beta season lasts 28 days. It has four scoring weeks. It is ranked. Each ladder awards separate Territory, War, and Guild Reputation champion titles. Beta has no fee, prize, stake, or wager.
+
+Adopted Parameter 2, open guild entry: Registration stays open before and during the season. Creating a guild opens its MO2 Myrland, MO2 Sarducaa, and combined MO1 ladder records at zero. A ladder shows ranks as soon as a guild has an approved score. A champion title needs at least two guilds with approved scores on that ladder.
+
+Adopted Parameter 3, land values: A finished Tier One Stronghold is worth 2,500 units. Tier Two is worth 4,500. Tier Three is worth 6,500. A finished Keep is worth 10,000. An Outpost is worth 1,000. Keep and Outpost values are Beta values set by the League. They are not market prices.
+
+Adopted Parameter 4, score formulas: Live Territory Power is the total value of approved assets held now. Territory Control Points equal asset value times verified hours held, divided by 24,000. Siege Value equals approved enemy building value destroyed, plus 500 for each approved enemy death. Siege Points equal Siege Value divided by 1,000.
+
+Adopted Parameter 5, ownership time: Send an asset claim within 12 hours after control starts. A claim sent on time may start at the first supported time. A late claim starts when it is sent unless refs approve a fair and proven exception.
+
+Adopted Parameter 6, death limit: The same named enemy can earn death value no more than two times in one event. Each death gets one record and one award. More proven deaths may stay in the record with zero value.
+
+Adopted Parameter 7, open rosters: There is no roster lock or waiting period. A player becomes active when the guild join is complete. League actions may count only after that time. Leaving a guild stops future reports for that guild. It does not erase earlier approved results.
+
+Adopted Parameter 8, case dates: A first battle report is due 12 hours after the event. The other side then gets 12 hours. A normal ref question gets a 12-hour reply. Refs aim to give a first ruling within 48 hours after replies close. An appeal is due in 24 hours. Appeal refs aim to finish within 72 hours after the appeal record closes.
+
+Adopted Parameter 9, referees: Guild leaders and officers serve as refs. They may submit and review tickets, but they cannot rule on their own guild. One uninvolved ref may decide a normal objection. Two uninvolved refs review a serious cheating claim or a large score change. An appeal uses different refs when enough people are available.
+
+Adopted Parameter 10, proof and storage: Most facts use the more-likely-than-not test. Fraud, teamwork to cheat, fake proof, season removal, permanent bans, and bans over 28 days need clear and convincing proof. Normal event proof stays for at least 90 days after the case or season ends. Proof for a fixed serious ban stays for one year after the appeal or ban ends. Proof for a permanent ban gets a need check each year. Rejected ref forms stay for 30 days.
+
+Adopted Parameter 11, penalties and holds: Class Three bans are usually 28 to 90 days. Class Four bans are at least 90 days and may last one year or forever. A head ref may use a 72-hour hold. A conflict-free panel must then approve, change, or end it in writing.
+
+Adopted Parameter 12, rule and patch time: Give 72 hours of notice for a normal rule change. Start it no sooner than the next scoring week. The committee must approve an emergency change within 48 hours. A major game patch stops the affected score or match type for seven days. Written tests may allow an earlier return.
+
+Adopted Parameter 13, standard match: Standard Foot Combat uses five starters and up to two subs. It is best of three rounds. Steel is the highest metal. Mounts, pets, outside help, and buffs cast before the start are banned. Each side gets one reset per match for a disconnect before the start.
+
+Part Three: Mortal League Beta rules.
+
+Part Three status: These rules govern every ranked Beta season. The rules and planning tools are public. League scoring starts after the registration and review service passes the checks in Part Seven.
+
+Beta Rule 1, start notice: A Beta season starts only after every gate in Part Seven is met. The League must post the rulebook, value list, dates, committee, refs, and report link. The season starts on the first Saturday at 00:00 UTC that is at least 14 full days after readiness. Every notice must call the League an independent community project and must not claim Star Vault approval.
+
+Beta Rule 2, season length and goal: A Beta season lasts 28 days. Guild registration stays open. Each guild starts at zero on all three ladders and may report only actions that happen after entry. Every ladder keeps separate Territory, War, and Guild Reputation ranks. Each score names its champion after final rulings close. Beta has no fee, prize, stake, or wager.
+
+Beta Rule 3, official time: UTC controls all dates and times. A page may also show local time. The saved UTC time wins any dispute. A 23:59 UTC due time includes a report sent before 00:00 UTC the next day. One full day means 24 hours from the readiness time.
+
+Beta Rule 4, scoring weeks: The season opens Saturday at 00:00 UTC. It closes 28 days later at the same time. It has four seven-day scoring weeks. Points keep adding through the season. Week lines control weekly posts and work review. Guild rosters stay open.
+
+Beta Rule 5, guild entry and age: Creating a guild makes its three ladder records. The guild adds its tags, main officer, backup officer, public text, and needed ally details before public scoring. Proof must show that a guild leader or officer controls the tag. Each player must state that they are at least 18. The League will not ask for a birth date, legal name, or government ID unless a later rule requires it. Public pages show only approved team data and chosen names.
+
+Beta Rule 6, ladder records: MO2 Myrland and MO2 Sarducaa keep separate land, battle reports, penalties, matches, and points. MO1 uses one combined Myrland and Sarducaa record. All three are ranked Beta ladders. Points and team penalties never cross ladders. A personal League ban follows the scope in its final ruling.
+
+Beta Rule 7, entry during play: A guild may enter while a ladder or season is open. It starts at zero and may report actions that happen after entry. It gets no past land or event points. The public record shows when the guild became active.
+
+Beta Rule 8, roster size and reports: Each guild keeps a private list of verified players and chosen character names. Rosters have no size cap. A guild needs five listed players for a five-on-five match. Any listed member may send a League action report. Named officers accept event terms, answer cases, and appeal.
+
+Beta Rule 9, roster changes: A new player becomes active when the guild join is complete. A guild may remove a player at once. Removal does not erase acts, proof duties, or results from active time. A later guild join allows future reports only. It cannot move or create past points.
+
+Beta Rule 10, names and team changes: Report a character name change within 24 hours after using it in a League event. The private roster keeps the old link. The public roster shows the current chosen name and start date. Guild merges, splits, name changes, and tag changes need review. Old points stay with the team that earned them unless a final ruling moves them.
+
+Beta Rule 11, allies: Each guild lists current allies and major combat partners before its first League report. It must report a change within 24 hours. This helps ref conflict checks and event scoring. Private deal terms stay private. Hidden control of guilds that claim to compete is a fair play issue if it may affect scores, times, proof, or rulings.
+
+Beta Rule 12, public score types: Mortal League Beta uses Territory, War, Guild Reputation, and match records. Territory includes Live Territory Power and Season Control Points. War includes event damage, approved deaths, Siege Value, and Siege Points. Guild Reputation covers verified public guild activity. Each ladder awards one champion title for each of its three scores. Match records stay separate. The League does not make one total score.
+
+Beta Rule 13, value list: Mortal League Beta uses one frozen value list with a version number. Stronghold values are 2,500, 4,500, and 6,500 by tier. A Keep is 10,000. An Outpost is 1,000. Keep and Outpost numbers are League Beta values, not market prices. The final report must show how much each asset type shaped the score.
+
+Beta Rule 14, other buildings: Houses, Territory Control buildings, walls, gates, towers, and other player buildings earn no passive land points. Their exact plan or deed gold value may count after destruction if the frozen list has that building and tier. Supply and replacement notes may be shown. Market price changes do not change Mortal League Beta points.
+
+Beta Rule 15, missing values: A building with no active frozen value at event start earns no Siege Points. Refs may mark it as destroyed with no value. The Rules Committee may add a value in a later list. The new value cannot add points to an event that already started.
+
+Beta Rule 16, Live Territory Power: Add the frozen values of all approved Strongholds, Keeps, and Outposts held now. A Tier Three Stronghold adds 6,500, not all three tier values. Combined Organization Power may add current Myrland and Sarducaa totals for facts. It cannot combine season, siege, or match scores. It cannot rank, break ties, set entry, or grant an award.
+
+Beta Rule 17, Season Control Points: Territory Control Points equal asset value times verified hours held, divided by 24,000. A 2,500-unit asset held for 24 hours earns 2.5 points. A 6,500-unit asset held for seven days earns 45.5 points. A 1,000-unit Outpost held for 12 hours earns 0.5 points.
+
+Beta Rule 18, score detail: The ledger measures time in seconds and keeps at least six decimal places. Public pages show three decimal places. The saved full value sets the order before tie rules apply.
+
+Beta Rule 19, approved land asset: An asset must be on the approved continent list. It must be complete, show a clear guild tag, and belong to an active guild. An unfinished asset earns no passive points. A guild earns no points before its entry time. Later entry does not add past points.
+
+Beta Rule 20, ownership start: A claim sent within 12 hours may start at the first time supported by proof. A late claim starts when it is sent. A League outage, medical issue, or similar fair reason may allow another start time. Refs must explain the exception in writing. The start cannot be earlier than the proof.
+
+Beta Rule 21, ownership end: Control ends when proof shows a new owner, destruction, desertion, game removal, loss of entry, or season close. The ledger closes the old time and opens the new time. It does not erase history. A disputed time stays pending until the case ends.
+
+Beta Rule 22, friendly transfer and loss: A friendly transfer changes control but adds no Siege Value. Deserted, decayed, self-destroyed, freely removed, admin-removed, or patch-removed assets add no Siege Value. A team claiming enemy destruction must prove enemy cause during the event.
+
+Beta Rule 23, Outpost capture: A capture closes one Outpost control time and opens another. The capture adds no Siege Value. The 1,000-unit value measures control, not destroyed property. Other approved buildings destroyed in that event may still count.
+
+Beta Rule 24, scoring event: Siege scores come only from an accepted League event between registered groups. Both main officers must accept the same terms before the event starts. A support group seeking death value must also register, disclose its role, and accept those terms. One-sided attacks, unregistered targets, and late-made claims earn no Mortal League Beta Siege Points.
+
+Beta Rule 25, event terms: Each event lists its number, continent, broad area, main sides, and support groups. It lists a private target if needed. It also lists the time, start, end, roster, win rule, and banned acts. Last, it lists outside-player rules, tech pause rules, proof needs, refs, and rule versions. A major change makes a new terms version. Both main officers must accept it again.
+
+Beta Rule 26, event privacy: Exact targets, start times, tactics, and private routes stay private while they may affect play. A public event card may show the sides, continent, event type, broad date, roster range, ref need, offer end, and status. Mortal League Beta cards show no stake.
+
+Beta Rule 27, scoring side: Each event names one main scoring group on each side. Destroyed building value goes to the main enemy group whose accepted side caused it. Support groups get no building share. An accepted support group may get death value for its own approved player. A death with unclear ally credit or an outside player gets zero value.
+
+Beta Rule 28, siege score: Siege Value is approved enemy building value destroyed, plus 500 for each approved enemy death. Siege Points equal Siege Value divided by 1,000. A 4,500-unit building and three approved deaths make 6,000 Siege Value and 6.000 Siege Points.
+
+Beta Rule 29, approved building loss: A scored building must be complete. The enemy group must have held it for 24 hours before the event. Proof must show its type, tier, owner, event link, and destruction. Damage without destruction gets zero value. Capture, desertion, friendly transfer, decay, self-destruction, or weak proof gets zero value.
+
+Beta Rule 30, tier value: An upgraded building gets only the full value of its finished tier. One Tier Three Stronghold is worth 6,500, not 13,500. An attached building counts only if the value list names it as a separate asset and proof shows its loss.
+
+Beta Rule 31, gear and stored items: Siege tools, dropped items, stored goods, moved supplies, mounts, pets, and guessed lost profit add no Siege Value. A report may note a large proven loss without points. This keeps weak inventory claims and market prices out of scores.
+
+Beta Rule 32, approved death: The defeated player must be on an approved enemy roster. The death must happen in the accepted time and area because of enemy action. Proof must show the name, death, event link, and scoring group. NPC, self, world, ally, outside-player, and out-of-time deaths get zero value unless enemy cause is proven.
+
+Beta Rule 33, duplicate deaths: One death gets one record and one award. Many clips, reports, helpers, or revives cannot copy it. Refs merge matching names and times. The same named enemy earns value for no more than two deaths in one event. More proven deaths stay listed with zero value.
+
+Beta Rule 34, death order: When one name has more than two deaths, the first two valid deaths get value. If a final ruling removes one, the next valid death may count. Another character does not avoid the cap when private roster proof links the same player and shows planned farming.
+
+Beta Rule 35, kill credit: Death value goes to the approved group of the player who caused the death. If proof shows the death and side but not which ally got it, list it with zero value. Officers cannot give an unclear death to the main group by default.
+
+Beta Rule 36, point farming: Self-kills, alt kills, traded kills, spawn loops, fed deaths, staged building loss, fake land moves, and planned score deals get zero points. They also open a fair play case. A simple duplicate mistake gets a fix. Planned false value is score abuse.
+
+Beta Rule 37, defense result: A win on defense may break a land-score tie. It gives no flat points. Defenders get Siege Points only for approved enemy buildings and deaths. This keeps the set formula in control.
+
+Beta Rule 38, first battle report: A named officer must send a full battle report within 12 hours after the event. It must list the result, real start and end, land change, each building and death claim, allies, tech issues, and proof links. A late report gets no new score lines unless refs approve an exception.
+
+Beta Rule 39, other side reply: The other officer gets notice and 12 hours to agree, dispute, or add proof. Silence is not proof. Review starts after the reply time ends. A reply should name each disputed line and give proof or a clear reason.
+
+Beta Rule 40, ref questions: Refs may send one normal question with 12 hours to reply. A panel may allow another question only if new facts create a new issue. A missed reply lets refs use the current record. It is not an automatic rule break.
+
+Beta Rule 41, ruling dates: Refs aim for a first ruling within 48 hours after replies close. An approved person has 24 hours to appeal. With no appeal, the ruling becomes final after that time. With an appeal, the panel aims to finish within 72 hours after the appeal record closes.
+
+Beta Rule 42, more time: A League outage, platform outage, medical issue, emergency, or similar fair reason may allow more time. Ask as soon as you can. The ruling must list the old due time, send time, proof, new due time, and effect on the other side.
+
+Beta Rule 43, proof record: Each proof file gets a hidden ID, size, file type, hash, sender role, claimed time, upload time, case number, and fixed storage link. The League keeps the original unchanged. A safe copy may support a public ruling when policy allows it.
+
+Beta Rule 44, allowed proof: Refs may use original game images, full clips, full streams, and exact video times. They may also use ref notes, other-side agreement, event terms, approved League logs, and official game records. Discord messages and officer claims may add context. One side's unsupported claim cannot prove a disputed score by itself.
+
+Beta Rule 45, original files: A crop, caption, edit, transcript, or short clip may guide review. It does not replace the original when the original can be shared. Refs may ask for the original, nearby video, full image, or full message. They may reject a line when missing context blocks a fair check.
+
+Beta Rule 46, ownership proof: Proof must show the continent, asset or Outpost, guild tag, asset state, and a trusted time. One clear game view may be enough. If not, two or more matching sources must link the place, asset, owner, and time.
+
+Beta Rule 47, destruction proof: A loss needs a full destruction clip or linked before-and-after proof. It must show the asset, owner, tier, enemy event, and destroyed state. An empty place later is not enough without a before state and proof of enemy cause.
+
+Beta Rule 48, death proof: A death line needs an exact time or clip, the shown character name, clear proof of death, and a link to the scoring group. A score screen, voice claim, or roster alone cannot prove a disputed death.
+
+Beta Rule 49, proof integrity: Refs may reject fake, changed, misleading, time-shifted, wrongly named, or partly hidden proof. It may also open a fair play case. Normal file compression, site changes, or privacy edits are allowed when the original stays available and the edit is clear.
+
+Beta Rule 50, proof levels: Most land, event, building, roster, time, and death facts use the more-likely-than-not test. Fraud, planned cheating, fake proof, score abuse, bans over 28 days, season removal, or permanent bans need clear and convincing proof. If score proof is tied, the claim gets no points.
+
+Beta Rule 51, private access: Only assigned conflict-free refs, one approved proof admin, and the assigned appeal panel may open private proof. Each view creates a record. Hiding a button is not enough. The server must block other access. Refs cannot download, repost, share, or reuse proof outside the case.
+
+Beta Rule 52, refs and League roles: Guild leaders and officers serve as League refs. The small population makes a separate neutral staff unrealistic. A ref may submit tickets for their guild and review tickets from other guilds. They cannot rule on their own guild. The founder keeps records but cannot undo a final ruling.
+
+Beta Rule 53, ref count by case: One uninvolved ref may decide a normal objection, disputed activity ticket, or simple score fix. Two uninvolved refs review a serious cheating claim, major penalty, or large score change. An appeal uses different refs when enough are available. When there are not enough refs, the ruling must state that limit.
+
+Beta Rule 54, conflict check: A ref cannot rule on their own guild. Before opening disputed proof, the ref must also check allies, wars, combat partners, close ties, money links, and public fights. A stated conflict leads to another ref. Hiding a major conflict may void the ruling and open a new case.
+
+Beta Rule 55, ref rulings: A ref records the ticket facts, proof checked, rule used, point result, and reason. A two-ref case needs both votes. A split leaves the claim unproven unless an appeal resolves it. The public ruling shows the safe fact summary and point result. It does not show private account details.
+
+Beta Rule 56, tech problems: A wide platform or region outage pauses the event record. Refs may restart, move, or void the event based on recovery and equal effect. A game crash that hurts both sides may allow a pause and proof request. One player's disconnect does not stop open-world play unless the terms or both officers allow it.
+
+Beta Rule 57, outside players: Uninvited players are a normal open-world risk unless proof shows a large and one-sided effect. Their deaths get no value. Refs may change, move, or void an event only if the outside play changed the win rule or made fair review impossible.
+
+Beta Rule 58, claimed network attack: A disconnect image does not prove a DDoS attack or other planned network act. The League opens a private safety or fair play case. It saves exact times and tech reports, avoids public blame, and points the player to the right report route. The event stays pending if the open issue may decide the result.
+
+Beta Rule 59, first ruling fix: Before a case is final, refs may fix math, duplicates, typing, wrong values, name links, or weak fact lines. The dated fix must keep the old version. Each officer gets notice. A major fix starts a new appeal clock.
+
+Beta Rule 60, final ruling fix: Final points are never edited in place. A proven office error opens a fix case. It adds linked ledger entries with the old event, rule, value list, and ruling. New cheating proof opens a new fair play case. It cannot be hidden as an office fix.
+
+Beta Rule 61, fix due date: Ask for a normal fix within seven days after the final ruling or before season-close review, whichever comes first. The League may fix clear database, math, duplicate, or name errors while proof is stored. A late request must explain why no one could find the error sooner.
+
+Beta Rule 62, duplicate posting: Every land time, event line, ruling, penalty, and point move gets a unique key. Running the same ruling again cannot add a second award. A copied database move gets a reversing entry. It does not prove player cheating.
+
+Beta Rule 63, Live Territory Power ties: Live Territory Power shows current land. It is not a title score. Teams with the same full value share the same place. There is no tie rule for equal current land value.
+
+Beta Rule 64, land season ties: A full Territory Control Points tie uses this order. First, compare points from Keeps and Strongholds. Then compare Outposts held for at least 24 total hours. Next use proven defenses, a head-to-head match, and a neutral tie match. If the last match cannot happen, the teams stay tied.
+
+Beta Rule 65, siege ties: A full Siege Points tie uses this order. First, compare building-damage value. Then compare the number of enemy teams that gave positive Siege Value. Next use the head-to-head event and a neutral match. If none works, the teams stay tied.
+
+Beta Rule 66, match ties: For one match type, compare head-to-head results first. Then use other teams' win rate without their games against the tied teams. Next use the round or goal gap set by that format. Last, use a neutral tie match. Different match types keep separate records.
+
+Beta Rule 67, match records: Matches do not change land, Territory Control Points, Siege Points, or the War Ledger. Mortal League Beta records wins, losses, rounds, players, format, rule version, and final ruling. A match format may name a champion when its active rules set a fair ranking and tie path. The League does not combine all formats into one Match Champion.
+
+Beta Rule 68, match types: Mortal League Beta may use Field Battle, Skirmish, King of the Hill, Convoy or Escort, Defense Drill, Siege Scrim, and Standard Five-on-Five Foot Combat. Each type must set team size, subs, place, borders, start time, and win rule. It must also set banned acts, outside-player rules, tech pauses, proof, ref count, and score gap. Both officers must agree before play.
+
+Beta Rule 69, five-on-five team: Standard Five-on-Five Foot Combat uses five starters and up to two named subs per group. Subs enter only between rounds. The match is best of three rounds. The first group to win two rounds wins.
+
+Beta Rule 70, five-on-five gear: Steel is the highest allowed metal. The kit list names each allowed weapon, armor item, shield, supply, reagent, and amount. Equal League kits are best when ready. If players bring gear, proof must show the right gear from 60 seconds before the start through the end.
+
+Beta Rule 71, five-on-five play: Mounts, pets, outside help, and buffs cast before the start are banned. Magic after the start, healing, bandages, and Oghmir pipes are allowed unless the kit list bans them. Death or mercy state removes a player for that round. Crossing the set arena line removes a player when a ref or required video proves it.
+
+Beta Rule 72, five-on-five stops: Outside help loses the round unless the other team and ref agree it had no effect. A disconnect before the start gives each team one reset per match. A disconnect after the start does not stop play unless a wider outage hurts both teams. Using a repeatable exploit for gain may lose the round or match and open a fair play case.
+
+Beta Rule 73, patch pause: A major patch that affects combat, gear, skills, buildings, land, or siege play starts a seven-day pause for that score or match type. The Rules Committee may end it early after a written test. It may extend the pause if the type is still not safe. Other types may continue.
+
+Beta Rule 74, penalty goal: Penalties protect correct records, fair play, private proof, and safety. They do not punish a normal loss, honest dispute, careful unproven report, or claim with too little proof. Each penalty names the person or team, proven act, rule, proof level, scope, length, score effect, public status, and appeal route.
+
+Beta Rule 75, Class Zero: Weak proof, one honest office error, a small format error, or a fast fixed duplicate gets no rule-break finding. The League rejects or fixes the line and records why. Class Zero never enters the public Integrity Registry.
+
+Beta Rule 76, Class One: This class covers a first late report, poor reply, careless duplicate, small event-rule break, or like office error. It may bring a private warning, line loss, fix order, or filing limit up to seven days. Class One ends when its set time ends or that Beta season closes. It stays off the public Registry unless a public result needs an explanation.
+
+Beta Rule 77, Class Two: This class covers repeat Class One acts, an unapproved player, or a major event-rule break. It also covers refusal to protect proof or careless conflict notice. It may bring a lost event, point reversal, seven-to-28-day event limit, or the same ban. An active public limit may enter the Registry after the case is final.
+
+Beta Rule 78, Class Three: This class covers fake proof, planned death farming, staged loss, and planned score sharing. It also covers hidden major conflicts, release of private proof, banned bets, and planned exploit use. All affected results become void. The normal ban is 28 to 90 days. The League may remove the team for the season, remove a ref, and post a final ruling when the act had a major effect.
+
+Beta Rule 79, Class Four: Doxxing, real threats, swatting, account attacks, DDoS attacks, witness revenge, severe hate, or repeat Class Three acts may cause an instant hold. A final ban lasts at least 90 days. It may last one year or forever based on harm and repeat acts. The League states only the code facts it can prove. It uses the Safety Desk for outside reports.
+
+Beta Rule 80, team fault: One person's act does not always punish the full team. A team gets a lost event, point reversal, ban, season removal, or League removal only with clear and convincing proof. An officer must have ordered, approved, hidden, gained from, or refused to fix the act after notice. The ruling must split personal and team findings.
+
+Beta Rule 81, urgent hold: A head ref may use a 72-hour proof, event, contact, or play hold when delay risks safety, proof, or fair play. A conflict-free panel must approve, narrow, change, or end it in writing before 72 hours. A hold does not mean guilt. It stays off the public Registry unless a small safety notice is needed.
+
+Beta Rule 82, penalty change: A panel may go above or below a normal range for strong reasons. The final ruling must name and explain those reasons. Help, quick fixes, small harm, and no past finding may lower a penalty. Planning, revenge, repeat acts, wide harm, misuse of a League role, and hiding may raise it.
+
+Beta Rule 83, who may appeal: A named officer may appeal an event, land, roster, or score ruling that affects the group. A punished person or team may appeal that penalty. A witness, viewer, outside guild, or community member may send facts. They do not control the appeal.
+
+Beta Rule 84, appeal needs: One appeal must name the finding, rule and version, claimed error, wanted fix, and proof links. It must show new key proof or a wrong use of a rule. It may show no fair chance to reply, a hidden conflict, a math error, or another key error. Simple repeat disagreement does not reopen a case.
+
+Beta Rule 85, appeal review: Three conflict-free refs who did not vote before hear the appeal. They usually use the saved record and allowed new proof. They review the affected issue again if the appeal proves a hidden ref conflict, no notice, no fair reply, or a damaged proof record.
+
+Beta Rule 86, appeal result: The panel may keep, undo, change, return, fix, or void the ruling. The final ruling lists the vote, key facts, rule version, fix, point effect, and public effect. It does not name private ref votes. One appeal ends the League appeal path. Later office fixes and new cheating proof use their own paths.
+
+Beta Rule 87, proof storage time: Normal event proof stays private for 90 days after the final ruling or season close, whichever is later. Proof for a fixed Class Three or Four penalty stays for one year after the appeal or penalty ends. Proof for a permanent ban gets a written need check one year after appeal and each year after. The League deletes or fully hides proof it no longer needs. Safe rulings, file hashes, and basic logs may stay. Rejected ref forms are deleted after 30 days unless the person allows more time. A written hold may pause deletion for an appeal, safety report, legal order, or open fair play case. Every hold gets a review date.
+
+Beta Rule 88, public ruling: A public ruling gives reasons and a fact summary. It shows no proof image. An active Registry card may show the chosen game name, team, case number, finding type, and short proven act. It may also show the penalty, dates, appeal state, ruling, and fix history. The active card ends when the penalty ends. The saved ruling stays, but the chosen name comes off after 90 days. A permanent ban may keep the chosen name only after a yearly written need check. A safety need may add 90 days at a time. Private proof, witnesses, account IDs, and contact details never appear.
+
+Beta Rule 89, rule versions: The rulebook uses major, minor, and fix numbers. A major change affects scores, entry, proof levels, penalties, appeal rights, or another key right. It normally waits for the next season. A minor change adds a future step or clear meaning with a game effect. A fix changes spelling, links, or words without changing meaning.
+
+Beta Rule 90, rule freeze: The founder freezes the rulebook, value list, ladder list, tie rules, and score code before the announced start. A normal major change needs a public plan, 72 hours of notice, a recorded two-thirds committee vote, an exact start time, and future-only use. It starts no sooner than the next scoring week.
+
+Beta Rule 91, emergency change: An emergency change may fix a score exploit, security flaw, harmful game bug, or patch that breaks a rule. The head ref may pause that area at once. Two-thirds of the conflict-free committee must approve new words within 48 hours. The notice lists the flaw, old rule, new rule, start time, affected area, and open-event plan.
+
+Beta Rule 92, no hidden past changes: An event uses the rulebook and value list active when it starts. A later rule cannot change a closed event only because it gives a new result. A valid fix must use the old rule and name the old versions. If a value changes during land control, the ledger ends the old time and starts a new time at the change.
+
+Beta Rule 93, score code: Each score-code update lists the rule it uses, code version, test result, release time, and affected math. A code bug cannot change the written rule. When code and rules differ, refs use the active written rule. The League adds fix entries after code repair.
+
+Beta Rule 94, weekly scores: The League posts weekly scores and marks provisional points or open cases. The post shows Territory, War, Guild Reputation, match records, fixes, and active rule versions. Private identity data stays out. Proof links remain limited to participating guilds and assigned refs.
+
+Beta Rule 95, season close: Normal score reports close 12 hours after the season ends. They may cover only events and land changes before the end. Refs finish open first rulings, appeals, fixes, and land times before locking the record. Each ladder then names its Territory Champion, War Champion, and Guild Reputation Champion. A match format may also name its champion. Titles carry no prize, stake, or wager.
+
+Beta Rule 96, season report: The final report lists guilds, ladders, planned events, played events, score claims, approved scores, and champions. It lists land changes and score share by asset type. It also lists death-value share, duplicate removals, disputes, fixes, ruling time, and ref work. Last, it lists penalties, appeals, tech problems, and ideas for the next Beta version. It may group player feedback. It cannot name private people who replied.
+
+Beta Rule 97, Guild Reputation: Guild Reputation rewards verified public guild activity. It does not replace Territory or War. It may reward PvP patrols, structured roams, training, scrims, free raffles, giveaways, trade events, supply runs, escorts, recruitment events, community events, diplomatic agreements, and other proven guild activity.
+
+Beta Rule 98, Reputation point levels: A small activity earns 25 points. A normal organized activity earns 50 points. A large or difficult activity earns 100 points. A major event with clear world impact earns 150 points. Reputation uses only these four point levels during Mortal League Beta.
+
+Beta Rule 99, activity proof: Every Reputation ticket must name one ladder, activity, time, place, participant count, event length, and clear explanation. One clear screenshot is enough. More images are optional and do not add points or raise the review confidence. A damage log, destroyed structure, guild group, useful Discord overlay, visible resource, or similar image may support the report. The report must say whether the activity reached people outside the guild. A copied proof file or false report earns no points.
+
+Beta Rule 100, automated review: The ticket system checks the date, details, proof count, and duplicate files. It recommends a category, point level, confidence level, and short public summary. A live AI model may replace or assist this rule check only after it is connected, tested, and named on the site. The League must not call a simple rule check an active AI model.
+
+Beta Rule 101, provisional points and objections: A clear Reputation ticket may post provisional points at once. Participating guilds get 48 hours to object. With no objection, the points become final. An objection must name the fact, proof, or score that needs review. It sends the ticket to an uninvolved ref.
+
+Beta Rule 102, one event and one award: One event earns one guild Reputation award. The award does not multiply by the number of members. Random ganking may support a verified patrol or roam, but each kill does not create Reputation points. Staged fights, alternate-character farming, repeated victim farming, and spawn camping earn no Reputation points.
+
+Beta Rule 103, League notices: Guild officers may opt in to email, Discord officer-channel, and Discord announcement-channel notices. The site keeps addresses and channel details private. The League must mark each delivery method not connected until it sends a real test notice. The public announcement feed may show the safe ticket summary, provisional points, proof count, confidence, objection deadline, and ticket number.
+
+Part Four: Final League decision register.
+
+Decision-register status: Decisions 1 through 12 are complete and built into Parts Two and Three. This list records what was approved. It is not a second set of rules. Part Three controls proof, storage, penalties, fixes, appeals, matches, ties, patches, and versions.
+
+Decision 1, season form: Updated October 3, 2026. Mortal League Beta is a full ranked launch. Each season lasts 28 days. Guild entry stays open. Each ladder awards separate Territory, War, and Guild Reputation champion titles. Beta has no fee, prize, stake, or wager.
+
+Decision 2, start calendar: Updated October 3, 2026. After all launch gates are met, the season starts on the first Saturday at 00:00 UTC that is at least 14 full days later. Registration and member rosters stay open. The season ends 28 days after it starts.
+
+Decision 3, ladder groups: Updated October 3, 2026. MO2 Myrland and Sarducaa keep separate scores, land, war records, matches, penalties, and tie rules. MO1 Myrland and Sarducaa use one combined ranked Beta ladder. A guild enters all three ladders when it is created.
+
+Decision 4, land values: Updated October 3, 2026. Stronghold tiers are worth 2,500, 4,500, and 6,500 units. A Keep is worth 10,000. An Outpost is worth 1,000. These Beta values are reviewed after each season.
+
+Decision 5, score math: Approved September 23, 2026. Live Territory Power is current asset value. Territory Control Points equal value times verified hours, divided by 24,000. Siege Value is approved building value plus 500 per approved enemy death. Siege Points equal Siege Value divided by 1,000. Land, siege, and matches stay separate.
+
+Decision 6, repeat deaths: Approved September 24, 2026. One named enemy may add death value only twice in one event. Each death gets one record and one award. More proven deaths stay listed with zero value. Other linked characters enter the cap only when private roster proof shows one player and planned farming.
+
+Decision 7, allies and outside players: Approved September 24, 2026. Building value goes to the main scoring group whose side caused the loss. Death value goes to the approved group of the proven killer. Unclear ally credit and outside-player deaths get zero value.
+
+Decision 8, roster rule: Updated September 27, 2026. Rosters have no size cap or lock. Five-on-five matches need at least five listed players. A new player becomes active when the guild join is complete. Reports count only for actions after that time. Leaving does not erase earlier approved results.
+
+Decision 9, event entry: Approved September 24, 2026. Both main guilds must accept an event before it starts. A support guild seeking death value must have an active League entry, list its role, and accept the same terms. One-sided attacks, inactive targets, and late claims get no score.
+
+Decision 10, honor-system refs: Updated October 3, 2026. Guild leaders and officers serve as refs. They cannot rule on their own guild. One uninvolved ref decides a normal objection. Two uninvolved refs review a serious cheating claim or large score change. An appeal uses different refs when enough people are available.
+
+Decision 11, ref power: Updated October 3, 2026. Refs may check proof, rule on objections, adjust points, reject tickets, and publish final rulings. A ref with a conflict steps out. The founder keeps records and may post system results. The founder cannot undo a final ruling.
+
+Decision 12, Guild Reputation: Approved October 3, 2026. Territory, War, Guild Reputation, and match records stay separate. Reputation uses 25, 50, 100, and 150 point levels. Clear tickets may post provisional points for 48 hours. Guilds may object. Final referee rulings enter the Integrity Registry.
+
+Final League status: Decisions 1 through 12 are complete. The full ranked Beta policy is set. The rules and planning tools are public. League scoring starts after the registration and review service passes the final readiness checks. The League does not claim Star Vault approval.
+
+Part Five: Questions requiring a written Star Vault answer.
+
+Part Five status: These questions ask Star Vault for written guidance. They do not show approval. The League must not claim approval, partnership, or official status without a written record. The owner must resolve any permission required by the game terms before public access. Questions 9 through 11 cover incident help, the Creator Program, and later prizes. The public Terms of Service were reviewed on September 23, 2026. They set an age of 18, ban false Star Vault claims, protect private data and messages, and state rules for related software tools.
+
+Star Vault Question 1, public League: May Mortal League Beta run as an independent player contest? It would use automatic guild entry, player-sent League proof, ladder scores, matches, ref rulings, appeals, and a final-rulings-only Registry.
+
+Star Vault Question 2, notice: What exact notice must appear on League pages? It must make clear that the League is not a Star Vault service, moderator, or game authority.
+
+Star Vault Question 3, name and brand: May the project use Mortal League Beta, Mortal Online 1 League, and Mortal Online 2 League? Which Star Vault names, logos, fonts, images, icons, and brand rules may it use?
+
+Star Vault Question 4, maps and game art: May the League post marked game maps, areas, Outpost and Keep places, building images, and other game art? If not, may it use a simple map made from its own research and art?
+
+Star Vault Question 5, web tool: May the League use a website that never changes or runs the game client? It would store only chosen League profile data, player-sent images or video links, manual ref findings, and scores. Private guild work would remain outside League review. Which capture, code, overlay, data pull, or data field is not allowed?
+
+Star Vault Question 6, values and data: Will Star Vault give or check a current building price list, tier rules, Keep type, Outpost list, region list, and ownership source? If not, may the League post clear test values marked as its own?
+
+Star Vault Question 7, public names and rulings: May the League post team names, tags, chosen character names, final rulings, active League bans, and fix history? All players would accept the League terms, and private proof would stay private.
+
+Star Vault Question 8, age and entry: Mortal League Beta asks each player to state that they are at least 18. Does Star Vault need another age check, consent term, or location limit? Does it need another entry rule for a ranked event with no fee, prize, wager, gold stake, or item stake? What would change for a later approved prize?
+
+Star Vault Question 9, incident contact: Will Star Vault name one contact for events, big patches, server problems, building values, claimed exploits, and planned attacks? What data may the League save and send when a server or safety event affects a result?
+
+Star Vault Question 10, Creator Program: May the League join the Creator Program and get official event shares? After approval, may it say that it is in the program? The League will use only wording Star Vault approves.
+
+Star Vault Question 11, later prizes and stakes: Would Star Vault allow organizer prizes, sponsor prizes, or chosen game challenge terms in a later season? This does not change Mortal League Beta. Version 1.0 bans prizes, stakes, escrow, payment tools, and wagers.
+
+Star Vault boundary: The League record does not contain Star Vault approval. No page may claim approval, partnership, official status, or Creator Program membership without a written record. The owner must resolve any permission required by the game terms before public access. A later answer may change future rules. It cannot erase an approved score unless a named ruling or correction says why.
+
+Part Six: Research basis for the adopted rules.
+
+Research scope: The League reviewed current Mortal Online 2 rules and trusted contest and privacy guides. These sources helped shape proof, privacy, penalties, appeals, patches, and public records. They do not give the League legal power, Star Vault power, or power over people who do not join.
+
+Primary official Mortal Online 2 sources:
+
+1. Star Vault, Mortal Online 2 Terms of Service, https://www.mortalonline2.com/terms-of-service/. The reviewed terms ban false Star Vault claims and limit the use of private data and messages. They require written approval for related tools. They ban exploits, set the player age at 18, and let game rules change.
+
+2. Star Vault, Mortal Online 2 End User License Agreement, https://www.mortalonline2.com/eula/. The agreement limits client changes, automation, and exploit use.
+
+3. Star Vault, Mortal Online 2 Privacy Policy, https://www.mortalonline2.com/privacy-policy/. The policy supports limited data storage. It also warns that public data may spread.
+
+4. Star Vault, Creator Program, https://www.mortalonline2.com/creator-program/. This may offer a path for approved League promotion. The League cannot claim to be in the program before approval.
+
+Competition and privacy sources:
+
+5. Esports Integrity Commission, Code of Conduct, https://esic.gg/codes/code-of-conduct/. The code supports sound proof, fair penalties, written steps, and normal fact review.
+
+6. Court of Arbitration for Sport, Code of Sports-related Arbitration, https://www.tas-cas.org/en/arbitration/code-procedural-rules. These rules support fair judges, conflict checks, clear rulings, and a separate review.
+
+7. U.S. Center for SafeSport, Response and Resolution Process, https://uscenterforsafesport.org/response-and-resolution-process-flowchart/. The process shows notice, reply, review, different penalties, private proof, and small public ban records.
+
+8. United Kingdom Information Commissioner's Office, Data Minimisation and Storage Limitation, https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/data-minimisation/ and https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/storage-limitation/. The guides support collecting only needed data. They also support set storage times, need checks, and safe deletion.
+
+Research result: Mortal League Beta must stay independent and must not claim Star Vault approval. The League name, records, tools, images, and scores may touch Star Vault rights. The owner must resolve any required permission before public access. Beta uses an age statement and avoids extra ID data. Original proof stays private. Public rulings give reasons without private proof. Stored data gets time limits and need checks. Conflict checks and separate appeal refs help keep review fair. Stronger penalties need stronger proof. Rule versions, patch pauses, and clear change records make changes easier to check.
+
+Part Seven: Launch readiness and independence checks.
+
+Completed League decisions: Decisions 1 through 12 are in the rules. The full ranked Beta policy is set.
+
+Needed systems: Automatic three-ladder entry, League action reports, protected proof, provisional points, objections, ref recusal, announcements, and the Integrity Registry are built. They still need a neutral public host and a full launch test. The League also needs a complete appeal path, privacy notices, backup tests, an incident plan, and a neutral ref list. Each ranked ladder may open with any number of guilds. A champion title needs at least two guilds with approved scores on that ladder.
+
+Service launch review: Keep registration closed while its address or data setup may expose private details. Test guild entry, all three ladders, every score type, proof upload, objections, recusal, rulings, announcements, and the Integrity Registry. Test backups, privacy, access, and deletion. Do not use game-client automation, data pulls, Star Vault brand marks, or a claim of Star Vault support.
+
+Mortal League Beta scoring gate: League scoring may open after the registration address is replaced, required permissions are resolved, the independent-project notice is posted, neutral refs are named, and every system in this Part passes a test. Registration then stays open. Rule 1 sets the season start after at least 14 full days of notice.
+
+Required Star Vault Decision 1, League and notice: Ask whether the League may run in public and what notice Star Vault requires. Do not claim an answer before it is recorded.
+
+Required Star Vault Decision 2, name and art: Ask which League names, brand marks, images, maps, buildings, and original map art may be used. Do not use approval language without a written answer.
+
+Required Star Vault Decision 3, tool and data: Ask for limits on the manual web tool, code, data fields, capture, automation, data pulls, overlays, and game links. Resolve any required permission before public access.
+
+Required Star Vault Decision 4, public records: Ask whether the League may post chosen rosters, scores, final rulings, active bans, and fix history under these privacy rules.
+
+Required Star Vault Decision 5, player entry: Ask whether the age-18 rule needs another check, consent term, or location limit for ranked Mortal League Beta with no fee, prize, stake, or wager.
+
+Final decision status: League Decisions 1 through 12 are complete. The ranked Beta rules and planning tools are public. League registration and scoring still wait on a neutral service address, system tests, neutral refs, the appeal path, and any permission required by the game terms. No Star Vault approval is claimed.

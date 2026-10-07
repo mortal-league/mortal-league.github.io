@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="A local Mortal Online 1 campaign and event tracker." />
+    <title>MO1 Campaign Tracker | Mortal League Beta</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath fill='none' stroke='%23fff36a' stroke-width='6' d='M12 50V14l20 21 20-21v36'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../tools.css" />
+    <script src="./app.js" defer></script>
+    <script src="../../mascot.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#tracker">Skip to Campaign Tracker</a>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="Mortal League Beta home"><span><strong>Mortal League Beta</strong></span></a>
+      <nav aria-label="League navigation"><a href="../../">Home</a><a href="../../mortal-online-2/">MO2 League</a><a href="../../mortal-online-1/">MO1 League</a><a href="../" aria-current="page">Tools</a><a href="../../rules/">Rulebook</a><a href="../../safety/">Safety</a><a href="../../fundraiser/">Fundraiser</a></nav>
+      <span class="privacy-chip"><span></span> Saved on this device</span>
+    </header>
+
+    <main class="tools-shell" id="tracker">
+      <section class="tool-header"><div><h1>MO1 Campaign Tracker</h1><p>Log fights, trade runs, events, discoveries, and next steps.</p></div><a class="secondary-button" href="../../mortal-online-1/">Back to MO1</a></section>
+
+      <div class="builder-layout">
+        <section class="tool-panel" aria-labelledby="entry-title">
+          <div class="panel-heading"><h2 id="entry-title">Add an entry</h2><span>Campaign log</span></div>
+          <form id="entry-form">
+            <div class="field-row two-up"><label><span>Date</span><input id="entry-date" type="date" required /></label><label><span>Type</span><select id="entry-type"><option>Battle</option><option>Trade</option><option>Event</option><option>Discovery</option><option>Diplomacy</option><option>Goal</option><option>Other</option></select></label></div>
+            <div class="field-row two-up"><label><span>Title</span><input id="entry-title-field" type="text" maxlength="100" required placeholder="North road patrol" /></label><label><span>Place</span><input id="entry-place" type="text" maxlength="100" placeholder="Tindrem" /></label></div>
+            <div class="field-row"><label><span>Result</span><textarea id="entry-result" maxlength="600" required placeholder="What happened?"></textarea></label><label><span>Next step</span><textarea id="entry-next" maxlength="300" placeholder="What should happen next?"></textarea></label></div>
+            <div class="form-actions"><button class="primary-button" type="submit">Add entry</button><span id="form-status" role="status" aria-live="polite"></span></div>
+          </form>
+
+          <div class="panel-heading list-heading"><h2>Campaign history</h2><span id="entry-count">0 entries</span></div>
+          <div class="builder-controls"><label class="control-label" for="entry-search">Search<input id="entry-search" type="search" placeholder="Title, place, result" /></label><label class="control-label" for="type-filter">Type<select id="type-filter"><option value="all">All</option><option>Battle</option><option>Trade</option><option>Event</option><option>Discovery</option><option>Diplomacy</option><option>Goal</option><option>Other</option></select></label></div>
+          <div class="campaign-list" id="campaign-list"></div>
+        </section>
+
+        <aside class="receipt-panel" aria-labelledby="export-title">
+          <div class="panel-heading"><h2 id="export-title">Back up the log</h2><span>Local data</span></div>
+          <p>Download JSON to restore the tracker. Download CSV to read the log in a spreadsheet.</p>
+          <div class="stacked-actions"><button class="primary-button" id="download-json" type="button">Download JSON</button><button class="secondary-button" id="download-csv" type="button">Download CSV</button><label class="secondary-button file-button" for="import-json">Import JSON</label><input class="visually-hidden" id="import-json" type="file" accept="application/json,.json" /><button class="text-button" id="clear-log" type="button">Clear all entries</button></div>
+          <p class="tool-notice" id="backup-status" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </main>
+    <footer><strong>Mortal Online 1 League</strong></footer>
+  </body>
+</html>

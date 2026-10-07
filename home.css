@@ -1,0 +1,253 @@
+.homepage-shell {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 2.5rem 1rem 5rem;
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 1rem;
+  align-items: stretch;
+  padding-bottom: 3.5rem;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+  padding: 2rem 0;
+  border: 0;
+}
+
+.hero-copy h1 {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+}
+
+.hero-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.hero-actions .primary-button,
+.hero-actions .secondary-button {
+  display: flex;
+  align-items: center;
+  min-height: 3.5rem;
+}
+
+.mascot-panel {
+  position: relative;
+  display: grid;
+  place-items: end center;
+  min-height: 400px;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  background: var(--black);
+}
+
+.mascot-frame {
+  width: min(100%, 560px);
+  aspect-ratio: 9 / 8;
+  background-image: url("/assets/forest-troll-finisher-sprite-v1.png");
+  background-position: 66.667% 0;
+  background-repeat: no-repeat;
+  background-size: 400% 300%;
+  transform: translateY(2%);
+}
+
+.mascot-frame.is-tool-smash {
+  animation: big-troll-tool-smash 1450ms steps(1, end) both;
+}
+
+@keyframes big-troll-tool-smash {
+  0%, 18% { background-position: 33.333% 0; }
+  19%, 37% { background-position: 66.667% 0; }
+  38%, 56% { background-position: 100% 0; }
+  57%, 75% { background-position: 0 50%; }
+  76%, 100% { background-position: 66.667% 100%; }
+}
+
+.home-section {
+  padding: 3.5rem 0;
+  border-top: 0;
+  scroll-margin-top: 1rem;
+}
+
+.home-section .section-heading { margin-bottom: 1.5rem; }
+.home-section .section-heading > p:not(.eyebrow) { color: var(--yellow); }
+
+.season-grid,
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.available-now .page-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.season-card,
+.page-grid article {
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  padding: 1.25rem 0;
+  border: 0;
+}
+
+.season-card .primary-button,
+.season-card .secondary-button { width: fit-content; margin-top: auto; }
+
+.season-card.current,
+.season-card.future { border: 0; }
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 0;
+}
+
+.phase-label {
+  color: var(--yellow);
+  font: 700 0.7rem/1.45 var(--font-mono);
+  text-transform: uppercase;
+}
+
+.season-card h3,
+.page-grid h3 {
+  margin: 1.3rem 0 0.7rem;
+  font-size: 1.5rem;
+}
+
+.season-card ul {
+  padding-left: 1.25rem;
+  color: var(--yellow);
+}
+
+.season-card li + li { margin-top: 0.35rem; }
+.season-card p { color: var(--yellow); }
+.season-card > strong {
+  display: block;
+  margin-top: 1.2rem;
+  color: var(--yellow);
+}
+
+.system-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+.system-flow li {
+  min-height: 260px;
+  padding: 1rem 0;
+  border: 0;
+}
+
+.system-flow li:last-child { border: 0; }
+.system-flow li > span,
+.record-grid article > span {
+  color: var(--yellow);
+  font: 800 1.5rem/1 var(--font-mono);
+}
+
+.system-flow h3 {
+  margin: 4rem 0 0.55rem;
+  font-size: 1rem;
+}
+
+.system-flow p,
+.record-grid p,
+.page-grid p {
+  margin-bottom: 0;
+  color: var(--yellow);
+  font-size: 0.84rem;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.record-grid article {
+  min-height: 230px;
+  padding: 1rem 0;
+  border: 0;
+}
+
+.record-grid h3 {
+  margin: 3rem 0 0.55rem;
+  font-size: 1rem;
+}
+
+.page-grid article {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.page-grid .primary-button,
+.page-grid .secondary-button {
+  width: fit-content;
+  margin-top: auto;
+}
+
+.launch-note {
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  border: 0;
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.launch-note h2 { margin-bottom: 0.6rem; color: var(--black); }
+.launch-note > p:not(.eyebrow) {
+  max-width: 900px;
+  color: var(--black);
+}
+
+@media (max-width: 1000px) {
+  .home-hero,
+  .system-flow { grid-template-columns: 1fr; }
+  .hero-copy,
+  .mascot-panel { min-height: 360px; }
+  .system-flow li { min-height: auto; border: 0; }
+  .system-flow li:last-child { border: 0; }
+  .system-flow h3 { margin-top: 1.4rem; }
+  .record-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .available-now .page-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+  .homepage-shell { padding-top: 2rem; }
+  .hero-actions,
+  .season-grid,
+  .page-grid,
+  .record-grid { grid-template-columns: 1fr; }
+  .hero-actions { display: grid; }
+  .hero-actions .primary-button,
+  .hero-actions .secondary-button,
+  .page-grid .primary-button,
+  .page-grid .secondary-button { width: 100%; }
+  .mascot-panel { min-height: 320px; }
+  .season-card,
+  .page-grid article,
+  .record-grid article { min-height: auto; }
+  .season-card .primary-button,
+  .season-card .secondary-button { width: 100%; }
+  .card-heading { align-items: flex-start; }
+  .available-now .page-grid { grid-template-columns: 1fr; }
+}

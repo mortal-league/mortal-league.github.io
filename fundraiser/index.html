@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="Print the ranked Mortal League Beta Rulebook and view the fundraiser rule poster."
+    />
+    <title>Fundraiser and Print Edition | Mortal League Beta</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath fill='none' stroke='%23fff36a' stroke-width='6' d='M12 50V14l20 21 20-21v36'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./fundraiser.css" />
+    <script src="../mascot.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#fundraiser">Skip to fundraiser</a>
+
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Mortal League Beta home">
+        <span><strong>Mortal League Beta</strong></span>
+      </a>
+      <nav aria-label="League navigation">
+        <a href="../">Home</a>
+        <a href="../mortal-online-2/">MO2 League</a>
+        <a href="../mortal-online-1/">MO1 League</a>
+        <a href="../tools/">Tools</a>
+        <a href="../rules/">Rulebook</a>
+        <a href="../safety/">Safety</a>
+        <a href="./" aria-current="page">Fundraiser</a>
+      </nav>
+      <span class="status-chip"><span></span> Private proof</span>
+    </header>
+
+    <main class="fundraiser-shell" id="fundraiser">
+      <section class="product-hero" aria-labelledby="poster-title">
+        <figure class="poster-frame">
+          <div class="poster-proof" role="img" aria-label="Visual yellow and black Mortal League Beta quick rules poster with large text, score diagrams, deadline clocks, a report flow, and the Forest Troll mascot">
+            <header class="poster-masthead">
+              <img src="../assets/forest-troll-mascot.png" alt="" />
+              <div>
+                <span>Mortal League Beta</span>
+                <strong>Quick Rules</strong>
+                <small>Ranked play / no wagers</small>
+              </div>
+            </header>
+
+            <section class="poster-ladder-strip">
+              <b>1 / Choose the ladder</b>
+              <div>
+                <strong>MO2<br />Myrland</strong>
+                <strong>MO2<br />Sarducaa</strong>
+                <strong>MO1<br />Combined</strong>
+              </div>
+            </section>
+
+            <section class="poster-scores">
+              <article>
+                <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M17 55V9m2 4h29L39 25l9 12H19" /></svg>
+                <h3>Territory</h3>
+                <p class="poster-formula">Value × hours<br />÷ 24,000</p>
+                <p><b>Keep</b> 10,000</p>
+                <p><b>Stronghold</b> 2,500 / 4,500 / 6,500</p>
+                <p><b>Outpost</b> 1,000</p>
+                <small>Claim within 12 hours.</small>
+              </article>
+              <article>
+                <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 8h36v17c0 16-7 25-18 31C21 50 14 41 14 25V8Zm9 16h18M32 15v28" /></svg>
+                <h3>War</h3>
+                <p class="poster-formula">Building value<br />+ 500 per death<br />÷ 1,000</p>
+                <p>Accepted events only.</p>
+                <p>Hold building 24 hours, then destroy it.</p>
+                <small>Same enemy: 2 deaths max per event.</small>
+              </article>
+              <article class="poster-reputation">
+                <svg viewBox="0 0 64 64" aria-hidden="true"><path d="m32 7 7 15 17 2-12 12 3 17-15-8-15 8 3-17L8 24l17-2 7-15Z" /></svg>
+                <h3>Reputation</h3>
+                <div><b>25</b><span>Small</span></div>
+                <div><b>50</b><span>Organized</span></div>
+                <div><b>100</b><span>Large or difficult</span></div>
+                <div><b>150</b><span>Major world impact</span></div>
+                <small>One event gets one award.</small>
+              </article>
+            </section>
+
+            <section class="poster-ticket">
+              <b>2 / Reputation report</b>
+              <div class="poster-ticket-flow">
+                <span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 20h13l4-7h14l4 7h13v32H8V20Zm24 8a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z" /></svg><strong>One clear screenshot</strong><small>Add what, where, and when.</small></span>
+                <i>›</i>
+                <span><strong>Provisional</strong><small>Proof and duplicates checked.</small></span>
+                <i>›</i>
+                <span><strong>48 hours</strong><small>Guilds may object.</small></span>
+                <i>›</i>
+                <span><strong>Final</strong><small>An objection goes to an uninvolved ref.</small></span>
+              </div>
+            </section>
+
+            <section class="poster-deadlines">
+              <b>3 / Deadlines</b>
+              <div>
+                <span><strong>12h</strong><small>Claims, reports, replies</small></span>
+                <span><strong>48h</strong><small>Ruling goal and Reputation objection</small></span>
+                <span><strong>24h</strong><small>File an appeal</small></span>
+                <span><strong>72h</strong><small>Appeal ruling goal</small></span>
+              </div>
+            </section>
+
+            <section class="poster-stops">
+              <div><b>No wagers</b><span>No fee, prize, stake, or bet.</span></div>
+              <div><b>Fair refs</b><span>No ref rules on their own guild.</span></div>
+              <div><b>No farming</b><span>Duplicates, staged fights, and score deals get zero.</span></div>
+              <div><b>5v5</b><span>5 starters + 2 subs. Best of 3. Steel max. No mounts, pets, outside help, or pre-start buffs.</span></div>
+            </section>
+
+            <footer>Use UTC / The active Rulebook controls</footer>
+          </div>
+          <figcaption>Yellow-and-black 24-by-36-inch quick rules proof.</figcaption>
+        </figure>
+
+        <div class="product-copy">
+          <h1 id="poster-title">Rule poster</h1>
+          <p class="product-lede">
+            This poster puts the rules players will check most on one page. It covers ladders,
+            score formulas, Reputation points, proof, deadlines, and review steps.
+          </p>
+
+          <div class="price-panel" aria-label="Poster price and sale status">
+            <span>Fundraiser price</span>
+            <strong>Pending</strong>
+            <p>Set the price after a 24-by-36-inch print and shipping test. No orders are open.</p>
+          </div>
+
+          <div class="product-actions">
+            <span class="disabled-button" aria-disabled="true">Purchase link pending</span>
+            <a class="secondary-button" href="../downloads/mortal-league-beta-rule-flow-poster-24x36.pdf" download>
+              Download poster proof
+            </a>
+          </div>
+
+          <dl class="product-specs">
+            <div><dt>Format</dt><dd>24 by 36 inches, portrait</dd></div>
+            <div><dt>Content</dt><dd>Rules, formulas, deadlines, and decision flows</dd></div>
+            <div><dt>Palette</dt><dd>Black and Maddox yellow</dd></div>
+            <div><dt>Production</dt><dd>Paper and print shop not yet chosen</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="fundraiser-section rulebook-downloads" aria-labelledby="print-title">
+        <div class="section-heading">
+          <p class="eyebrow">Free rulebook</p>
+          <h2 id="print-title">Printable rulebook</h2>
+          <p>The rulebook is free. Poster sales will help pay for League systems.</p>
+        </div>
+
+        <div class="download-grid">
+          <article>
+            <span class="download-code">PDF / printable</span>
+            <h3>Printable Rulebook</h3>
+            <p>Low-ink US Letter pages with a white background, black text, page numbers, and print margins.</p>
+            <a class="primary-button" href="../downloads/mortal-league-beta-rulebook-v1.0.pdf" download>
+              Download printable PDF
+            </a>
+          </article>
+          <article>
+            <span class="download-code">Web / searchable</span>
+            <h3>Interactive Rulebook</h3>
+            <p>Search all 103 Beta rules. Filter sections, make text larger, or print the page.</p>
+            <a class="secondary-button" href="../rules/">Open web Rulebook</a>
+          </article>
+          <article>
+            <span class="download-code">TXT / portable</span>
+            <h3>Plain-Text Rulebook</h3>
+            <p>Download the rules as a simple text file.</p>
+            <a class="secondary-button" href="../rules/mortal-league-beta-rulebook-v1.0.txt" download>
+              Download plain text
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="fundraiser-section support-section" aria-labelledby="support-title">
+        <div class="section-heading">
+          <h2 id="support-title">Use of funds</h2>
+        </div>
+        <div class="support-grid">
+          <article><span>01</span><h3>League hosting</h3><p>Pages, tools, scores, and saved rule versions.</p></article>
+          <article><span>02</span><h3>Fair play tools</h3><p>Private proof storage, ref tools, fixes, and appeals.</p></article>
+          <article><span>03</span><h3>Player safety</h3><p>Report guides, checked links, upkeep, and privacy tools.</p></article>
+          <article><span>04</span><h3>League work</h3><p>Print tests, admin work, system tests, and guides.</p></article>
+        </div>
+        <p class="boundary-note">
+          Poster funds will not become Mortal League Beta prizes, wagers, or stakes. A buyer gets no team
+          spot, vote, ref power, score, or control over a ruling.
+        </p>
+      </section>
+
+      <section class="sale-gates" aria-labelledby="gates-title">
+        <h2 id="gates-title">Checkout requirements</h2>
+        <ol>
+          <li>Finish the name, fundraiser, and independence review.</li>
+          <li>Pick a print shop and approve a printed test.</li>
+          <li>Add safe payment and shipping tools.</li>
+          <li>Post shipping, refund, tax, privacy, and contact rules.</li>
+        </ol>
+        <p>
+          The design has no copied game image, Star Vault logo, or official game mark.
+          This public proof does not claim Star Vault approval or support.
+        </p>
+      </section>
+    </main>
+
+    <footer><strong>Mortal League Beta</strong></footer>
+  </body>
+</html>
