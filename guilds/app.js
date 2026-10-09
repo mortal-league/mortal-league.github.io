@@ -3,6 +3,7 @@
 
   const DIRECTORY_URL = "./guilds.json";
   const STORAGE_KEY = "mortal-league-guild-application-v1";
+  const REGISTRATION_STORAGE_KEY = "mortal-league-guild-registration-v1";
   const directory = document.querySelector("#guild-directory");
   const count = document.querySelector("#directory-count");
   const search = document.querySelector("#guild-search");
@@ -14,6 +15,10 @@
   const result = document.querySelector("#application-result");
   const output = document.querySelector("#application-text");
   const status = document.querySelector("#application-status");
+  const registrationForm = document.querySelector("#guild-registration");
+  const registrationResult = document.querySelector("#registration-result");
+  const registrationOutput = document.querySelector("#registration-text");
+  const registrationStatus = document.querySelector("#registration-status");
   let guilds = [];
 
   function text(value) {
@@ -124,6 +129,62 @@
     ].join("\n");
   }
 
+  function registrationObject() {
+    return Object.fromEntries(new FormData(registrationForm).entries());
+  }
+
+  function saveRegistration() {
+    localStorage.setItem(REGISTRATION_STORAGE_KEY, JSON.stringify(registrationObject()));
+    registrationStatus.textContent = "Registration draft saved on this device.";
+  }
+
+  function restoreRegistration() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(REGISTRATION_STORAGE_KEY) || "null");
+      if (!saved) return;
+      Object.entries(saved).forEach(([name, value]) => {
+        const control = registrationForm.elements.namedItem(name);
+        if (!control) return;
+        if (control.type === "checkbox") control.checked = value === "on";
+        else control.value = value;
+      });
+      registrationStatus.textContent = "Local registration draft restored.";
+    } catch (_) {
+      localStorage.removeItem(REGISTRATION_STORAGE_KEY);
+    }
+  }
+
+  function buildRegistration(data) {
+    return [
+      "MORTAL LEAGUE GUILD REGISTRATION DRAFT",
+      "This draft was created on the registering officer's device. Mortal League did not receive it.",
+      "",
+      `Guild name: ${text(data.guild)}`,
+      `Guild tag: ${text(data.tag)}`,
+      `Registering officer character name: ${text(data.officer)}`,
+      `Current game activity: ${text(data.game)}`,
+      `Primary continent: ${text(data.continent)}`,
+      `Primary language: ${text(data.language)}`,
+      `Time zone: ${text(data.timezone)}`,
+      `Usual activity schedule: ${text(data.schedule)}`,
+      `Primary focus: ${text(data.focus)}`,
+      `Recruitment status: ${text(data.recruitment)}`,
+      `Welcomes new players: ${data.newPlayers === "on" ? "Yes" : "No"}`,
+      "",
+      "Public guild description:",
+      text(data.description),
+      "",
+      "Membership requirements:",
+      text(data.requirements),
+      "",
+      "Automatic League entries: MO2 Myrland, MO2 Sarducaa, and MO1 combined.",
+      "Officer authority: Confirmed by applicant.",
+      "Age confirmation: Applicant stated they are at least 18.",
+      "Public guild-profile consent: Confirmed by applicant.",
+      "Status: Local draft. Shared registration remains closed."
+    ].join("\n");
+  }
+
   function download(filename, content) {
     const link = document.createElement("a");
     link.href = URL.createObjectURL(new Blob([content], { type: "text/plain;charset=utf-8" }));
@@ -156,7 +217,30 @@
   });
   document.querySelector("#download-application").addEventListener("click", () => download("mortal-league-guild-application.txt", output.textContent));
 
+  registrationForm.addEventListener("input", saveRegistration);
+  registrationForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!registrationForm.reportValidity()) return;
+    registrationOutput.textContent = buildRegistration(registrationObject());
+    registrationResult.hidden = false;
+    registrationStatus.textContent = "Guild-registration draft created. Nothing was submitted.";
+    registrationResult.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.querySelector("#clear-registration").addEventListener("click", () => {
+    registrationForm.reset();
+    localStorage.removeItem(REGISTRATION_STORAGE_KEY);
+    registrationResult.hidden = true;
+    registrationOutput.textContent = "";
+    registrationStatus.textContent = "Local registration draft cleared.";
+  });
+  document.querySelector("#copy-registration").addEventListener("click", async () => {
+    await navigator.clipboard.writeText(registrationOutput.textContent);
+    registrationStatus.textContent = "Registration draft copied.";
+  });
+  document.querySelector("#download-registration").addEventListener("click", () => download("mortal-league-guild-registration.txt", registrationOutput.textContent));
+
   restoreForm();
+  restoreRegistration();
   fetch(DIRECTORY_URL)
     .then((response) => response.ok ? response.json() : Promise.reject(new Error("Directory unavailable")))
     .then((data) => { guilds = Array.isArray(data.guilds) ? data.guilds : []; renderDirectory(); })

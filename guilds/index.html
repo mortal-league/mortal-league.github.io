@@ -23,7 +23,7 @@
 
     <main class="community-shell" id="main">
       <section class="community-hero">
-        <div><p class="eyebrow">Recruitment</p><h1>Guild Finder</h1><p>Search published recruitment listings, then prepare a private application. This page saves drafts only on this device. It does not send an application or publish your information.</p></div>
+        <div><p class="eyebrow">Recruitment</p><h1>Guild Finder</h1><p>Search published recruitment listings, prepare a private player application, or create a guild-registration draft. This page saves drafts only on this device. It does not send or publish your information.</p><div class="button-row"><a class="primary-button" href="#directory-title">Find a Guild</a><a class="secondary-button" href="#register">Register a Guild</a></div></div>
         <aside class="status-panel"><strong>Recruitment status</strong><span>Guild directory: ready, no listings published</span><span>Application builder: open locally</span><span>Private delivery: not connected</span><span>Public player profiles: disabled</span></aside>
       </section>
 
@@ -65,6 +65,39 @@
           <p>Review it, then copy or download it. Send it only through a contact route you trust.</p>
           <pre id="application-text"></pre>
           <div class="button-row"><button class="primary-button" id="copy-application" type="button">Copy draft</button><button class="secondary-button" id="download-application" type="button">Download TXT</button></div>
+        </section>
+      </section>
+
+      <section class="feature-section" id="register" aria-labelledby="register-title">
+        <h2 id="register-title">Register a Guild</h2>
+        <form class="form-panel" id="guild-registration">
+          <p class="connection-label">Local registration draft only</p>
+          <p>One accepted registration enters the guild in MO2 Myrland, MO2 Sarducaa, and the combined MO1 ladder. Shared registration remains closed until the secure service launches.</p>
+          <div class="form-grid">
+            <label>Guild name<input name="guild" type="text" required /></label>
+            <label>Guild tag<input name="tag" type="text" required maxlength="12" /></label>
+            <label>Registering officer character name<input name="officer" type="text" required autocomplete="off" /></label>
+            <label>Current game activity<select name="game" required><option value="">Choose one</option><option>Mortal Online 2</option><option>Mortal Online 1</option><option>Both games</option></select></label>
+            <label>Primary continent<select name="continent" required><option value="">Choose one</option><option>Myrland</option><option>Sarducaa</option><option>Both</option></select></label>
+            <label>Primary language<input name="language" type="text" required /></label>
+            <label>Time zone<input name="timezone" type="text" required placeholder="Example: Pacific Time" /></label>
+            <label>Usual activity schedule<input name="schedule" type="text" required /></label>
+            <label>Primary focus<input name="focus" type="text" required placeholder="PvP, PvE, trade, crafting, mixed" /></label>
+            <label>Recruitment status<select name="recruitment" required><option>Open</option><option>Application required</option><option>Invite only</option><option>Closed</option></select></label>
+            <label class="full-width">Public guild description<textarea name="description" required></textarea></label>
+            <label class="full-width">Membership requirements<textarea name="requirements" required></textarea></label>
+            <label class="check-row"><input name="newPlayers" type="checkbox" /><span>This guild welcomes new players.</span></label>
+            <label class="check-row"><input name="authority" type="checkbox" required /><span>I am authorized to submit this guild registration.</span></label>
+            <label class="check-row"><input name="age" type="checkbox" required /><span>I confirm that I am at least 18 years old.</span></label>
+            <label class="check-row"><input name="publicConsent" type="checkbox" required /><span>I approve public display of the guild name, tag, description, focus, recruitment status, and League results after registration is accepted.</span></label>
+          </div>
+          <div class="form-actions"><button class="primary-button" type="submit">Create guild-registration draft</button><button class="secondary-button" id="clear-registration" type="button">Clear draft</button><span id="registration-status" role="status"></span></div>
+        </form>
+        <section class="result-panel" id="registration-result" hidden aria-live="polite">
+          <h3>Guild-registration draft</h3>
+          <p>Review it, then copy or download it. Nothing has been submitted.</p>
+          <pre id="registration-text"></pre>
+          <div class="button-row"><button class="primary-button" id="copy-registration" type="button">Copy draft</button><button class="secondary-button" id="download-registration" type="button">Download TXT</button></div>
         </section>
       </section>
 
