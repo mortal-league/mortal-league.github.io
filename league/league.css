@@ -2,6 +2,7 @@
 .league-hero { display: grid; grid-template-columns: 1.5fr .7fr; gap: 22px; padding-bottom: 42px; border: 0; }
 .league-hero h1 { margin: 8px 0 14px; font-size: clamp(3rem, 9vw, 7rem); line-height: .85; letter-spacing: -.07em; }
 .league-hero > div > p:not(.eyebrow) { max-width: 680px; margin: 0 0 24px; font-size: 1.05rem; line-height: 1.6; }
+.league-hero .button-row { display: flex; flex-wrap: wrap; gap: 10px; }
 .league-hero aside { display: flex; flex-direction: column; gap: 9px; padding: 20px; border: 0; background: #fff36a; color: #000000; }
 .league-hero aside strong { padding-bottom: 10px; border: 0; color: #000000; text-transform: uppercase; }
 .league-hero aside span { font-size: .78rem; line-height: 1.4; }
@@ -41,4 +42,5 @@
   .point-grid article:last-child { border: 0; }
   .ticket-flow li { grid-template-columns: 38px 1fr; }
   .ticket-flow span { grid-column: 2; }
+  .league-hero .button-row a { width: 100%; }
 }

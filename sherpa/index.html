@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Request or become a Mortal League Sherpa and review role-specific League Standing." />
+    <title>Sherpa and Standing | Mortal League Beta</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../community/community.css" />
+    <script src="../mascot.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to Sherpa and Standing</a>
+    <header class="site-header"><a class="brand" href="../" aria-label="Mortal League Beta home"><span><strong>Mortal League Beta</strong></span></a><nav aria-label="League navigation"><a href="../">Home</a><a href="../mortal-online-2/">MO2 League</a><a href="../mortal-online-1/">MO1 League</a><a href="../community/">Community</a><a href="../tools/">Tools</a><a href="../rules/">Rulebook</a><a href="../safety/">Safety</a><a href="../fundraiser/">Fundraiser</a></nav><span class="status-chip"><span></span> Not verified by Star Vault</span></header>
+    <main class="community-shell" id="main">
+      <section class="community-hero"><div><p class="eyebrow">Player service</p><h1>Sherpa and League Standing</h1><p>Sherpas help players learn the game without receiving game authority. Service, feedback, conduct, and reliability build the application path toward League referee work.</p></div><aside class="status-panel"><strong>Verification status</strong><span>Star Vault verification: NOT VERIFIED</span><span>Request delivery: not connected</span><span>Sherpa applications: not connected</span><span>League referee appointment: separate review</span></aside></section>
+
+      <section class="feature-section" aria-labelledby="standing-title"><h2 id="standing-title">Role-specific League Standing</h2><div class="standing-grid"><article><h3>Participant</h3><p>Event conduct, accurate reports, deadlines, and compliance with final rulings.</p></article><article><h3>Sherpa</h3><p>Participant standing plus service time, useful feedback, training record, and learner safety.</p></article><article><h3>Referee</h3><p>Participant standing plus conflict disclosure, recusal, proof handling, ruling quality, and appeal conduct.</p></article></div></section>
+
+      <section class="feature-section" aria-labelledby="request-title"><h2 id="request-title">Request a Sherpa</h2><form class="form-panel sherpa-form" data-kind="Sherpa request"><p class="connection-label">Local request draft only</p><div class="form-grid"><label>Chosen character name<input name="character" type="text" required /></label><label>Game<select name="game" required><option>Mortal Online 2</option><option>Mortal Online 1</option></select></label><label>Continent<select name="continent"><option>Myrland</option><option>Sarducaa</option><option>Both</option></select></label><label>Time zone<input name="timezone" type="text" required /></label><label>Specialty needed<select name="specialty"><option>New-player basics</option><option>Combat</option><option>Crafting</option><option>Economy and trade</option><option>Territory and siege</option><option>Build planning</option><option>Other</option></select></label><label>Usual playtimes<input name="schedule" type="text" required /></label><label class="full-width">What do you need help with?<textarea name="details" required></textarea></label><label class="check-row"><input name="age" type="checkbox" required /><span>I am at least 18. This creates a private draft and does not send it.</span></label></div><div class="form-actions"><button class="primary-button" type="submit">Create request draft</button></div></form></section>
+
+      <section class="feature-section" aria-labelledby="become-title"><h2 id="become-title">Become a Sherpa</h2><form class="form-panel sherpa-form" data-kind="Sherpa application"><p class="connection-label">Local application draft only</p><div class="form-grid"><label>Chosen character name<input name="character" type="text" required /></label><label>Game experience<input name="experience" type="text" required /></label><label>Specialties<input name="specialty" type="text" required placeholder="List the areas you can teach" /></label><label>Time zone and availability<input name="schedule" type="text" required /></label><label class="full-width">Service experience<textarea name="service" required></textarea></label><label class="full-width">How will you protect learner privacy and safety?<textarea name="safety" required></textarea></label><label class="check-row"><input name="age" type="checkbox" required /><span>I am at least 18. I understand that Sherpa work grants no Star Vault or League enforcement authority.</span></label></div><div class="form-actions"><button class="primary-button" type="submit">Create application draft</button></div></form></section>
+
+      <section class="result-panel" id="sherpa-result" hidden><h3 id="sherpa-result-title">Private draft</h3><pre id="sherpa-text"></pre><div class="button-row"><button class="primary-button" id="copy-sherpa" type="button">Copy draft</button><button class="secondary-button" id="download-sherpa" type="button">Download TXT</button></div><p id="sherpa-status" role="status"></p></section>
+      <section class="notice-panel feature-section"><h2>Referee pipeline</h2><p>Experienced Sherpas may apply separately for referee work after meeting service, time, feedback, conduct, and standing requirements. Referees must disclose conflicts and recuse from their own guild’s cases. Sherpa service alone does not appoint a referee.</p></section>
+    </main>
+    <footer><strong>Sherpa and Standing</strong><span>NOT VERIFIED by Star Vault.</span></footer>
+  </body>
+</html>

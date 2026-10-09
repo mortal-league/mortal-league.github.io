@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Guild Reputation categories, scoring, evidence, objections, and local report draft for Mortal League Beta." />
+    <title>Guild Reputation | Mortal League Beta</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../community/community.css" />
+    <script src="../mascot.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to Guild Reputation</a>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Mortal League Beta home"><span><strong>Mortal League Beta</strong></span></a>
+      <nav aria-label="League navigation"><a href="../">Home</a><a href="../mortal-online-2/">MO2 League</a><a href="../mortal-online-1/">MO1 League</a><a href="../community/">Community</a><a href="../tools/">Tools</a><a href="../rules/">Rulebook</a><a href="../safety/">Safety</a><a href="../fundraiser/">Fundraiser</a></nav>
+      <span class="status-chip"><span></span> Local draft only</span>
+    </header>
+    <main class="community-shell" id="main">
+      <section class="community-hero"><div><p class="eyebrow">Independent score</p><h1>Guild Reputation</h1><p>Reputation rewards verified public guild activity. It remains separate from Territory and War. One event receives one award.</p></div><aside class="status-panel"><strong>Connection status</strong><span>Rules and draft builder: open</span><span>Proof upload: not connected</span><span>Provisional ladder: not connected</span><span>Objections and referee queue: not connected</span></aside></section>
+
+      <section class="feature-section" aria-labelledby="categories-title"><h2 id="categories-title">Activity categories</h2><div class="category-grid">
+        <article><h3>Patrol</h3><p>Organized area security or presence.</p></article><article><h3>Roam</h3><p>Structured movement seeking interaction.</p></article><article><h3>Training</h3><p>Planned instruction or practice.</p></article><article><h3>Scrim</h3><p>Arranged practice against another group.</p></article><article><h3>Raffle or giveaway</h3><p>A free public distribution event.</p></article><article><h3>Trade</h3><p>A public market or organized exchange.</p></article><article><h3>Supply</h3><p>A documented supply run or delivery.</p></article><article><h3>Escort</h3><p>Protection provided during travel.</p></article><article><h3>Recruitment</h3><p>A public guild recruitment event.</p></article><article><h3>Community</h3><p>A service or event for players beyond the guild.</p></article><article><h3>Diplomatic</h3><p>A documented agreement between guilds.</p></article><article><h3>Miscellaneous</h3><p>Other proven public guild activity.</p></article>
+      </div></section>
+
+      <section class="feature-section" aria-labelledby="points-title"><h2 id="points-title">Point levels</h2><div class="point-grid-simple"><article><strong>25</strong><span>Small activity</span></article><article><strong>50</strong><span>Organized activity</span></article><article><strong>100</strong><span>Large or difficult activity</span></article><article><strong>150</strong><span>Major world impact</span></article></div></section>
+
+      <section class="feature-section" aria-labelledby="flow-title"><h2 id="flow-title">Review flow</h2><ol class="step-list"><li><strong>1. Submit</strong><span>One screenshot and a clear explanation.</span></li><li><strong>2. Check</strong><span>Date, details, proof, and duplicate files.</span></li><li><strong>3. Post</strong><span>Clear points appear as provisional.</span></li><li><strong>4. Object</strong><span>Participating guilds receive 48 hours.</span></li><li><strong>5. Decide</strong><span>An uninvolved referee publishes the ruling.</span></li></ol></section>
+
+      <section class="feature-section" aria-labelledby="draft-title"><h2 id="draft-title">Prepare a Reputation report</h2><form class="form-panel" id="reputation-report"><p class="connection-label">Local report draft only</p><div class="form-grid">
+        <label>Guild<input name="guild" type="text" required /></label><label>Ladder<select name="ladder" required><option value="">Choose one</option><option>MO2 Myrland</option><option>MO2 Sarducaa</option><option>MO1 combined</option></select></label>
+        <label>Activity category<select name="category" required><option>Patrol</option><option>Roam</option><option>Training</option><option>Scrim</option><option>Raffle or giveaway</option><option>Trade</option><option>Supply</option><option>Escort</option><option>Recruitment</option><option>Community</option><option>Diplomatic</option><option>Miscellaneous</option></select></label><label>Requested point level<select name="points"><option>25</option><option>50</option><option>100</option><option>150</option></select></label>
+        <label>Date and time<input name="time" type="text" required placeholder="Include time zone" /></label><label>Place<input name="place" type="text" required /></label><label>Participant count<input name="participants" type="number" min="1" required /></label><label>Event length<input name="length" type="text" required /></label>
+        <label class="full-width">Clear explanation<textarea name="description" required></textarea></label><label>One screenshot<input id="reputation-proof" type="file" accept="image/png,image/jpeg,image/webp" required /></label><label>Reached people outside the guild?<select name="external" required><option value="">Choose one</option><option>Yes</option><option>No</option></select></label>
+        <label class="check-row"><input name="truth" type="checkbox" required /><span>I confirm that this describes one real event. This page creates a draft and does not upload the screenshot.</span></label>
+      </div><div class="form-actions"><button class="primary-button" type="submit">Create Reputation draft</button><span id="reputation-status" role="status"></span></div></form><section class="result-panel" id="reputation-result" hidden><h3>Reputation report draft</h3><pre id="reputation-text"></pre><div class="button-row"><button class="primary-button" id="copy-reputation" type="button">Copy draft</button><button class="secondary-button" id="download-reputation" type="button">Download TXT</button></div></section></section>
+    </main>
+    <footer><strong>Guild Reputation</strong><span>One event. One award. One clear screenshot.</span></footer>
+  </body>
+</html>

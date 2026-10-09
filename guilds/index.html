@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Find a recruiting Mortal Online guild and prepare a private application." />
+    <title>Guild Finder | Mortal League Beta</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../community/community.css" />
+    <script src="../mascot.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to Guild Finder</a>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Mortal League Beta home"><span><strong>Mortal League Beta</strong></span></a>
+      <nav aria-label="League navigation"><a href="../">Home</a><a href="../mortal-online-2/">MO2 League</a><a href="../mortal-online-1/">MO1 League</a><a href="../community/">Community</a><a href="../tools/">Tools</a><a href="../rules/">Rulebook</a><a href="../safety/">Safety</a><a href="../fundraiser/">Fundraiser</a></nav>
+      <span class="status-chip"><span></span> Local draft only</span>
+    </header>
+
+    <main class="community-shell" id="main">
+      <section class="community-hero">
+        <div><p class="eyebrow">Recruitment</p><h1>Guild Finder</h1><p>Search published recruitment listings, then prepare a private application. This page saves drafts only on this device. It does not send an application or publish your information.</p></div>
+        <aside class="status-panel"><strong>Recruitment status</strong><span>Guild directory: ready, no listings published</span><span>Application builder: open locally</span><span>Private delivery: not connected</span><span>Public player profiles: disabled</span></aside>
+      </section>
+
+      <section class="feature-section" aria-labelledby="directory-title">
+        <h2 id="directory-title">Find a recruiting guild</h2>
+        <div class="filter-panel">
+          <div class="filter-grid">
+            <label>Search<input id="guild-search" type="search" placeholder="Guild name, focus, or language" /></label>
+            <label>Game<select id="game-filter"><option value="">MO1 and MO2</option><option value="MO2">Mortal Online 2</option><option value="MO1">Mortal Online 1</option></select></label>
+            <label>Continent<select id="continent-filter"><option value="">Myrland and Sarducaa</option><option value="Myrland">Myrland</option><option value="Sarducaa">Sarducaa</option><option value="Both">Both</option></select></label>
+            <label>Focus<select id="focus-filter"><option value="">Every focus</option><option value="PvP">PvP</option><option value="PvE">PvE</option><option value="Trade">Trade and crafting</option><option value="Mixed">Mixed</option><option value="New players">New-player training</option></select></label>
+          </div>
+          <p class="privacy-note"><span id="directory-count">0</span> recruiting guilds match these filters.</p>
+        </div>
+        <div class="directory-grid" id="guild-directory" aria-live="polite"></div>
+      </section>
+
+      <section class="feature-section" id="apply" aria-labelledby="apply-title">
+        <h2 id="apply-title">Prepare an application</h2>
+        <form class="form-panel" id="guild-application">
+          <p class="connection-label">Saved on this device</p>
+          <div class="form-grid">
+            <label>Guild you want to join<input name="guild" id="target-guild" type="text" required placeholder="Enter the guild name" /></label>
+            <label>Chosen character name<input name="character" type="text" required autocomplete="off" /></label>
+            <label>Game<select name="game" required><option value="">Choose one</option><option value="Mortal Online 2">Mortal Online 2</option><option value="Mortal Online 1">Mortal Online 1</option></select></label>
+            <label>Continent<select name="continent" required><option value="">Choose one</option><option>Myrland</option><option>Sarducaa</option><option>Both</option></select></label>
+            <label>Time zone<input name="timezone" type="text" required placeholder="Example: Pacific Time" /></label>
+            <label>Usual playtimes<input name="schedule" type="text" required placeholder="Days and approximate hours" /></label>
+            <label>Preferred roles or builds<input name="roles" type="text" placeholder="Combat, crafting, logistics, scouting" /></label>
+            <label>Experience level<select name="experience"><option>New player</option><option>Some experience</option><option>Experienced</option><option>Returning player</option></select></label>
+            <label class="full-width">What do you want from a guild?<textarea name="goals" required></textarea></label>
+            <label class="full-width">Short introduction<textarea name="introduction" required></textarea></label>
+            <label class="check-row"><input name="age" type="checkbox" required /><span>I confirm that I am at least 18 years old. This creates a private draft and does not send it.</span></label>
+          </div>
+          <div class="form-actions"><button class="primary-button" type="submit">Create private application draft</button><button class="secondary-button" id="clear-application" type="button">Clear draft</button><span id="application-status" role="status"></span></div>
+        </form>
+        <section class="result-panel" id="application-result" hidden aria-live="polite">
+          <h3>Your private application draft</h3>
+          <p>Review it, then copy or download it. Send it only through a contact route you trust.</p>
+          <pre id="application-text"></pre>
+          <div class="button-row"><button class="primary-button" id="copy-application" type="button">Copy draft</button><button class="secondary-button" id="download-application" type="button">Download TXT</button></div>
+        </section>
+      </section>
+
+      <section class="notice-panel feature-section"><h2>Membership consent</h2><p>Guild officers may accept, decline, or request more information after private delivery becomes available. A player must confirm acceptance before the League adds the chosen character name to a public roster. Discord names, contact information, and rejected applications remain private.</p></section>
+    </main>
+    <footer><strong>Guild Finder</strong><span>No application leaves this device from this page.</span></footer>
+  </body>
+</html>
