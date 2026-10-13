@@ -27,6 +27,7 @@
 .quote-mark { position: absolute; top: -1.2rem; left: 0.8rem; font-size: 5rem; font-weight: 800; line-height: 1; }
 
 .purpose-section,
+.organizing-statement,
 .system-section,
 .boundary-section,
 .stewardship-section { padding: 4.5rem 0; border-top: 1px solid var(--yellow); }
@@ -48,6 +49,124 @@
 .purpose-grid article > span { font-size: 2.5rem; font-weight: 800; }
 .purpose-grid h3 { margin: 4rem 0 0.5rem; font-size: 1.1rem; }
 .purpose-grid p { margin: 0; font-size: 0.82rem; }
+
+.statement-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: end;
+}
+
+.statement-header h2 { max-width: 850px; margin-bottom: 1rem; font-size: clamp(2.5rem, 6vw, 5.4rem); }
+.statement-deck { max-width: 760px; margin-bottom: 0; font-size: clamp(1rem, 2vw, 1.25rem); }
+
+.statement-facts {
+  margin: 0;
+  border-top: 4px solid var(--yellow);
+}
+
+.statement-facts div {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--yellow);
+}
+
+.statement-facts dt {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.statement-facts dd { margin: 0; font-size: 0.76rem; }
+
+.statement-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1.35fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: start;
+  margin-top: 4rem;
+}
+
+.statement-summary {
+  position: sticky;
+  top: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--yellow);
+}
+
+.statement-summary > p:not(.eyebrow) { font-size: 0.86rem; }
+.statement-summary .secondary-button { width: 100%; text-align: center; }
+.statement-jump { display: block; margin-top: 1rem; font-size: 0.78rem; font-weight: 700; text-align: center; }
+
+.statement-copy { max-width: 780px; }
+.statement-copy p { margin-bottom: 1.35rem; font-size: 0.98rem; line-height: 1.82; }
+.statement-copy .statement-lead { padding-left: 1.25rem; border-left: 8px solid var(--yellow); font-size: 1.12rem; font-weight: 700; }
+
+.source-cite {
+  display: inline-block;
+  padding: 0 0.12rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+  vertical-align: super;
+}
+
+.source-record {
+  margin-top: 3.5rem;
+  border: 1px solid var(--yellow);
+}
+
+.source-record summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem 1.25rem;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.source-record summary:hover { background: var(--yellow); color: var(--black); }
+.source-record summary small { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.source-note { margin: 0; padding: 1.25rem 1.25rem 0; font-size: 0.78rem; }
+
+.source-record ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 1.25rem;
+  padding: 0;
+  border-top: 1px solid var(--yellow);
+  border-left: 1px solid var(--yellow);
+  list-style: none;
+  counter-reset: source;
+}
+
+.source-record li {
+  min-width: 0;
+  padding: 1rem;
+  border-right: 1px solid var(--yellow);
+  border-bottom: 1px solid var(--yellow);
+  counter-increment: source;
+  font-size: 0.74rem;
+  overflow-wrap: anywhere;
+  scroll-margin-top: 1rem;
+}
+
+.source-record li::before {
+  content: counter(source, decimal-leading-zero);
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.source-record li strong { display: block; margin-bottom: 0.35rem; font-size: 0.8rem; }
+.source-record li a { display: inline-block; margin-top: 0.7rem; font-weight: 800; }
 
 .system-heading,
 .stewardship-section {
@@ -112,6 +231,9 @@
 @media (max-width: 1000px) {
   .about-hero { grid-template-columns: 1fr; min-height: auto; }
   .about-hero blockquote { max-width: 740px; }
+  .statement-header,
+  .statement-layout { grid-template-columns: 1fr; }
+  .statement-summary { position: static; max-width: 760px; }
   .purpose-grid,
   .system-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -122,6 +244,7 @@
   .system-heading,
   .boundary-section,
   .stewardship-section { grid-template-columns: 1fr; }
+  .source-record ol { grid-template-columns: 1fr; }
   .boundary-list { grid-template-columns: 1fr; }
   .about-cta { display: block; }
 }
@@ -134,4 +257,7 @@
   .about-actions { display: grid; }
   .about-actions .primary-button,
   .about-actions .secondary-button { width: 100%; }
+  .statement-facts div { grid-template-columns: 1fr; gap: 0.2rem; }
+  .source-record summary { align-items: flex-start; flex-direction: column; }
+  .source-record ol { margin: 0.75rem; }
 }

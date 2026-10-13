@@ -4,6 +4,19 @@
   padding: 2.5rem 1rem 5rem;
 }
 
+.weekly-hero > *,
+.current-issue > *,
+.standard-heading > *,
+.archive-heading > *,
+.delivery-section > *,
+.issue-section > header > * { min-width: 0; }
+
+.weekly-manifesto,
+.current-number,
+.current-copy,
+.weekly-manifesto strong,
+.current-copy h2 { max-width: 100%; overflow-wrap: anywhere; }
+
 .weekly-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);

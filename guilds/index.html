@@ -23,7 +23,7 @@
 
     <main class="community-shell" id="main">
       <section class="community-hero">
-        <div><p class="eyebrow">Recruitment</p><h1>Guild Finder</h1><p>Search published recruitment listings, prepare a private player application, or create a guild-registration draft. This page saves drafts only on this device. It does not send or publish your information.</p><div class="button-row"><a class="primary-button" href="#directory-title">Find a Guild</a><a class="secondary-button" href="#register">Register a Guild</a></div></div>
+        <div><p class="eyebrow">Recruitment</p><h1>Guild Finder</h1><p>Search published recruitment listings, prepare a private player application, or create a guild-registration draft. This page saves drafts on this device for up to 24 hours. It does not send or publish your information.</p><div class="button-row"><a class="primary-button" href="#directory-title">Find a Guild</a><a class="secondary-button" href="#register">Register a Guild</a></div></div>
         <aside class="status-panel"><strong>Recruitment status</strong><span>Guild directory: ready, no listings published</span><span>Application builder: open locally</span><span>Private delivery: not connected</span><span>Public player profiles: disabled</span></aside>
       </section>
 
@@ -44,18 +44,18 @@
       <section class="feature-section" id="apply" aria-labelledby="apply-title">
         <h2 id="apply-title">Prepare an application</h2>
         <form class="form-panel" id="guild-application">
-          <p class="connection-label">Saved on this device</p>
+          <p class="connection-label">Saved on this device for up to 24 hours</p>
           <div class="form-grid">
-            <label>Guild you want to join<input name="guild" id="target-guild" type="text" required placeholder="Enter the guild name" /></label>
-            <label>Chosen character name<input name="character" type="text" required autocomplete="off" /></label>
+            <label>Guild you want to join<input name="guild" id="target-guild" type="text" maxlength="80" required placeholder="Enter the guild name" /></label>
+            <label>Chosen character name<input name="character" type="text" maxlength="80" required autocomplete="off" /></label>
             <label>Game<select name="game" required><option value="">Choose one</option><option value="Mortal Online 2">Mortal Online 2</option><option value="Mortal Online 1">Mortal Online 1</option></select></label>
             <label>Continent<select name="continent" required><option value="">Choose one</option><option>Myrland</option><option>Sarducaa</option><option>Both</option></select></label>
-            <label>Time zone<input name="timezone" type="text" required placeholder="Example: Pacific Time" /></label>
-            <label>Usual playtimes<input name="schedule" type="text" required placeholder="Days and approximate hours" /></label>
-            <label>Preferred roles or builds<input name="roles" type="text" placeholder="Combat, crafting, logistics, scouting" /></label>
+            <label>Time zone<input name="timezone" type="text" maxlength="80" required placeholder="Example: Pacific Time" /></label>
+            <label>Usual playtimes<input name="schedule" type="text" maxlength="160" required placeholder="Days and approximate hours" /></label>
+            <label>Preferred roles or builds<input name="roles" type="text" maxlength="240" placeholder="Combat, crafting, logistics, scouting" /></label>
             <label>Experience level<select name="experience"><option>New player</option><option>Some experience</option><option>Experienced</option><option>Returning player</option></select></label>
-            <label class="full-width">What do you want from a guild?<textarea name="goals" required></textarea></label>
-            <label class="full-width">Short introduction<textarea name="introduction" required></textarea></label>
+            <label class="full-width">What do you want from a guild?<textarea name="goals" maxlength="1500" required></textarea></label>
+            <label class="full-width">Short introduction<textarea name="introduction" maxlength="1500" required></textarea></label>
             <label class="check-row"><input name="age" type="checkbox" required /><span>I confirm that I am at least 18 years old. This creates a private draft and does not send it.</span></label>
           </div>
           <div class="form-actions"><button class="primary-button" type="submit">Create private application draft</button><button class="secondary-button" id="clear-application" type="button">Clear draft</button><span id="application-status" role="status"></span></div>
@@ -71,21 +71,21 @@
       <section class="feature-section" id="register" aria-labelledby="register-title">
         <h2 id="register-title">Register a Guild</h2>
         <form class="form-panel" id="guild-registration">
-          <p class="connection-label">Local registration draft only</p>
+          <p class="connection-label">Local registration draft. Saved for up to 24 hours.</p>
           <p>One accepted registration enters the guild in MO2 Myrland, MO2 Sarducaa, and the combined MO1 ladder. Shared registration remains closed until the secure service launches.</p>
           <div class="form-grid">
-            <label>Guild name<input name="guild" type="text" required /></label>
+            <label>Guild name<input name="guild" type="text" maxlength="80" required /></label>
             <label>Guild tag<input name="tag" type="text" required maxlength="12" /></label>
-            <label>Registering officer character name<input name="officer" type="text" required autocomplete="off" /></label>
+            <label>Registering officer character name<input name="officer" type="text" maxlength="80" required autocomplete="off" /></label>
             <label>Current game activity<select name="game" required><option value="">Choose one</option><option>Mortal Online 2</option><option>Mortal Online 1</option><option>Both games</option></select></label>
             <label>Primary continent<select name="continent" required><option value="">Choose one</option><option>Myrland</option><option>Sarducaa</option><option>Both</option></select></label>
-            <label>Primary language<input name="language" type="text" required /></label>
-            <label>Time zone<input name="timezone" type="text" required placeholder="Example: Pacific Time" /></label>
-            <label>Usual activity schedule<input name="schedule" type="text" required /></label>
-            <label>Primary focus<input name="focus" type="text" required placeholder="PvP, PvE, trade, crafting, mixed" /></label>
+            <label>Primary language<input name="language" type="text" maxlength="80" required /></label>
+            <label>Time zone<input name="timezone" type="text" maxlength="80" required placeholder="Example: Pacific Time" /></label>
+            <label>Usual activity schedule<input name="schedule" type="text" maxlength="160" required /></label>
+            <label>Primary focus<input name="focus" type="text" maxlength="160" required placeholder="PvP, PvE, trade, crafting, mixed" /></label>
             <label>Recruitment status<select name="recruitment" required><option>Open</option><option>Application required</option><option>Invite only</option><option>Closed</option></select></label>
-            <label class="full-width">Public guild description<textarea name="description" required></textarea></label>
-            <label class="full-width">Membership requirements<textarea name="requirements" required></textarea></label>
+            <label class="full-width">Public guild description<textarea name="description" maxlength="2000" required></textarea></label>
+            <label class="full-width">Membership requirements<textarea name="requirements" maxlength="2000" required></textarea></label>
             <label class="check-row"><input name="newPlayers" type="checkbox" /><span>This guild welcomes new players.</span></label>
             <label class="check-row"><input name="authority" type="checkbox" required /><span>I am authorized to submit this guild registration.</span></label>
             <label class="check-row"><input name="age" type="checkbox" required /><span>I confirm that I am at least 18 years old.</span></label>
@@ -103,6 +103,6 @@
 
       <section class="notice-panel feature-section"><h2>Membership consent</h2><p>Guild officers may accept, decline, or request more information after private delivery becomes available. A player must confirm acceptance before the League adds the chosen character name to a public roster. Discord names, contact information, and rejected applications remain private.</p></section>
     </main>
-    <footer><strong>Guild Finder</strong><span>No application leaves this device from this page.</span></footer>
+    <footer><strong>Guild Finder</strong><span>No application leaves this page. Local drafts expire after 24 hours.</span></footer>
   </body>
 </html>

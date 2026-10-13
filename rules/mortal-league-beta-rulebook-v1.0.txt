@@ -296,7 +296,7 @@ Final League status: Decisions 1 through 12 are complete. The full ranked Beta p
 
 Part Five: Questions requiring a written Star Vault answer.
 
-Part Five status: These questions ask Star Vault for written guidance. They do not show approval. The League must not claim approval, partnership, or official status without a written record. The owner must resolve any permission required by the game terms before public access. Questions 9 through 11 cover incident help, the Creator Program, and later prizes. The public Terms of Service were reviewed on September 23, 2026. They set an age of 18, ban false Star Vault claims, protect private data and messages, and state rules for related software tools.
+Part Five status: These questions ask Star Vault for written guidance. They do not show approval. The League must not claim approval, partnership, or official status without a written record. Written permission has not been received. The public prototype does not establish that permission is unnecessary. Any permission required by the game terms must be resolved before registration, scoring, connected services, or other activity that requires it. Questions 9 through 11 cover incident help, the Creator Program, and later prizes. The public Terms of Service were reviewed on September 23, 2026. They set an age of 18, ban false Star Vault claims, protect private data and messages, and state rules for related software tools.
 
 Star Vault Question 1, public League: May Mortal League Beta run as an independent player contest? It would use automatic guild entry, player-sent League proof, ladder scores, matches, ref rulings, appeals, and a final-rulings-only Registry.
 
@@ -320,7 +320,7 @@ Star Vault Question 10, Creator Program: May the League join the Creator Program
 
 Star Vault Question 11, later prizes and stakes: Would Star Vault allow organizer prizes, sponsor prizes, or chosen game challenge terms in a later season? This does not change Mortal League Beta. Version 1.0 bans prizes, stakes, escrow, payment tools, and wagers.
 
-Star Vault boundary: The League record does not contain Star Vault approval. No page may claim approval, partnership, official status, or Creator Program membership without a written record. The owner must resolve any permission required by the game terms before public access. A later answer may change future rules. It cannot erase an approved score unless a named ruling or correction says why.
+Star Vault boundary: The League record does not contain Star Vault approval or written permission. No page may claim approval, partnership, official status, Creator Program membership, or permission without a written record. The public prototype does not answer the permission question. Any permission required by the game terms must be resolved before registration, scoring, connected services, or other activity that requires it. A later answer may change future rules. It cannot erase an approved score unless a named ruling or correction says why.
 
 Part Six: Research basis for the adopted rules.
 
@@ -346,13 +346,13 @@ Competition and privacy sources:
 
 8. United Kingdom Information Commissioner's Office, Data Minimisation and Storage Limitation, https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/data-minimisation/ and https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/storage-limitation/. The guides support collecting only needed data. They also support set storage times, need checks, and safe deletion.
 
-Research result: Mortal League Beta must stay independent and must not claim Star Vault approval. The League name, records, tools, images, and scores may touch Star Vault rights. The owner must resolve any required permission before public access. Beta uses an age statement and avoids extra ID data. Original proof stays private. Public rulings give reasons without private proof. Stored data gets time limits and need checks. Conflict checks and separate appeal refs help keep review fair. Stronger penalties need stronger proof. Rule versions, patch pauses, and clear change records make changes easier to check.
+Research result: Mortal League Beta must stay independent and must not claim Star Vault approval or permission. The League name, records, tools, images, and scores may touch Star Vault rights. The public prototype does not settle whether permission is required. Any required permission must be resolved before registration, scoring, connected services, or other activity that requires it. Beta uses an age statement and avoids extra ID data. Original proof stays private. Public rulings give reasons without private proof. Stored data gets time limits and need checks. Conflict checks and separate appeal refs help keep review fair. Stronger penalties need stronger proof. Rule versions, patch pauses, and clear change records make changes easier to check.
 
 Part Seven: Launch readiness and independence checks.
 
 Completed League decisions: Decisions 1 through 12 are in the rules. The full ranked Beta policy is set.
 
-Needed systems: Automatic three-ladder entry, League action reports, protected proof, provisional points, objections, ref recusal, announcements, and the Integrity Registry are built. They still need a neutral public host and a full launch test. The League also needs a complete appeal path, privacy notices, backup tests, an incident plan, and a neutral ref list. Each ranked ladder may open with any number of guilds. A champion title needs at least two guilds with approved scores on that ladder.
+Needed systems: Automatic three-ladder entry, League action reports, protected proof, provisional points, objections, ref recusal, announcements, and the Integrity Registry are specified in the rulebook and represented by prototype pages. They are not built as connected public services. They still need a neutral public host and a full launch test. The League also needs a complete appeal path, privacy notices, backup tests, an incident plan, and a neutral ref list. Each ranked ladder may open with any number of guilds. A champion title needs at least two guilds with approved scores on that ladder.
 
 Service launch review: Keep registration closed while its address or data setup may expose private details. Test guild entry, all three ladders, every score type, proof upload, objections, recusal, rulings, announcements, and the Integrity Registry. Test backups, privacy, access, and deletion. Do not use game-client automation, data pulls, Star Vault brand marks, or a claim of Star Vault support.
 
@@ -362,7 +362,7 @@ Required Star Vault Decision 1, League and notice: Ask whether the League may ru
 
 Required Star Vault Decision 2, name and art: Ask which League names, brand marks, images, maps, buildings, and original map art may be used. Do not use approval language without a written answer.
 
-Required Star Vault Decision 3, tool and data: Ask for limits on the manual web tool, code, data fields, capture, automation, data pulls, overlays, and game links. Resolve any required permission before public access.
+Required Star Vault Decision 3, tool and data: Ask for limits on the manual web tool, code, data fields, capture, automation, data pulls, overlays, and game links. The public prototype does not establish permission. Resolve any required permission before registration, scoring, connected services, or other activity that requires it.
 
 Required Star Vault Decision 4, public records: Ask whether the League may post chosen rosters, scores, final rulings, active bans, and fix history under these privacy rules.
 

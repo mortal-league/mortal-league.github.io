@@ -1,0 +1,91 @@
+MO LEAGUE STATEMENT ON PLAYER ORGANIZING
+
+Official MO League position. October 12, 2026.
+
+The MO League holds that player organizing is necessary to realize Mortal Online's stated social vision. A world built around trade, territorial conflict, reputation, and cooperation requires people who recruit, negotiate, teach, supply, host, and keep agreements. Guilds, alliances, trading associations, community events, and leagues are forms that work takes. The League's particular structure is our proposal for carrying it further.
+
+On October 7, 2008, Mats Persson described Mortal Online through personal skill and interaction. His examples included miners seeking protection, guilds trading or going to war, and new characters contributing to play with friends. Collective activity already formed part of the franchise's public design before the first game launched. Source 1.
+
+On April 2, 2009, Star Vault explained its intention to encourage social life by "forcing" people to communicate. Players would arrange auctions and find companions in gathering places. Limits on individual skills would preserve cooperation. Parties would negotiate loot, with the possibility of betrayal. New players would contribute to guild wars and shared encounters early in their development. Each example assigns players a practical social responsibility: finding people, arranging terms, and acting together. Source 2.
+
+On September 7, 2009, Persson identified player interaction as a test for design decisions. He described guild membership, promotion, titles, shared storage, and access rights; group training and caravan protection; and consequences administered by players alongside the game's flagging system. Specialized craftspeople would earn recognition through their work. These statements justify player institutions with responsibilities, procedures, and public standing. Sources 3 and 4.
+
+An undated prelaunch FAQ, preserved in a community reproduction, links trade, learning, rumors, and alliances to communication. It describes guilds needing complementary characters and a sandbox whose activities and outcomes players help create. Its promised mechanics belong to the historical record; its organizing principle is interdependence. Source 5.
+
+In 2012, Henrik Nyström explained that combatants depended on other playstyles for economic life and additional activities. Source 6.
+
+The surviving official MO1 website describes allies building keeps and pursuing political control through power, violence, or diplomacy. Its Steam description adds collective city construction and siege warfare. These descriptions give player organization economic, military, and political scope. Their current wording has no verified original publication date. Sources 7 and 8.
+
+On June 6, 2020, Nyström carried the social premise into Mortal Online 2, identifying player interaction as a core pillar and player activity as a source of content lasting years. He also emphasized the first hours of a newcomer's experience. For the League, that connects long-term community work with immediate entry: a new player needs a route to useful participation. Source 9.
+
+Players have already undertaken this work. On February 18, 2021, MÝRVIKINGS announced a Champions Tournament coordinated through Chronicles of Nave, with published rules and a public bracket. On August 30, 2021, Events advertised an open community hub combining job boards, training, contractors, caravans, and event staff. The League recognizes these precedents. Discord has supported substantial organizing, alongside guilds, forums, and external tools. The available record does not establish that a comparable organization has never existed. Sources 10 and 11.
+
+Developer involvement has continued alongside player initiative. On April 13, 2022, Star Vault staff introduced Community Scenarios to create situations players would encounter, interpret, and resolve, with outcomes recorded publicly. On February 18, 2026, Star Vault explicitly invited player-run events at Tindrem Arena while also planning official events and automated features. February 26 test notes described arena services supporting those events. The March 7 Grand Gathering announcement invited conversation, dueling, and the sharing of crafted goods. Sources 12, 13, 14, and 15.
+
+The current MO2 homepage gives players responsibility for settlements, trade routes, war, peace, and protection. Its FAQ emphasizes individual reputation, guilds, political power, housing, and regional trade. Across these statements, players inhabit a world whose social relations they continually produce through their actions. Sources 16 and 17.
+
+We therefore understand organizing as a necessary contribution to the franchise's success on its own stated terms: a populated world of consequential relationships and shared activity. That is the League's conclusion from the developer record. A particular league format has to earn participation and demonstrate its usefulness through practice.
+
+The League aims to make organizing durable across guild boundaries. Public rules, event records, standings, evidence, and appeals allow people to discover opportunities, assess commitments, and revisit decisions after a chat has moved on. Guild finding and training help newcomers contribute. Reputation records should recognize the supply, escort, teaching, and diplomatic work that sustains shared play.
+
+Star Vault supplies the world, mechanics, services, and official activities. Players supply the independent associations, commitments, and trust through which a player society takes shape. A developer-created feature provides possibilities; people still have to choose an undertaking, gather collaborators, and carry it out. The League accepts responsibility for that work.
+
+Participation remains voluntary. Guilds retain their identities and priorities, and players remain free to create other institutions and events. League authority extends to its participating activities under its published rules. Star Vault retains authority over the game and its policies. This is an official MO League statement of purpose, with developer sources documenting the franchise's vision; it claims no Star Vault endorsement of the League.
+
+Our tools should reduce the administrative burden of organizing while preserving human decisions. Referees must review contested evidence and account for their rulings. Organizers should spend less time repeating forms and more time arranging activity with players. We will judge the League by the opportunities it produces, the contributions it recognizes, and the worthwhile time people spend together in Mortal Online.
+
+
+HISTORICAL SOURCE RECORD
+
+Dated records document positions expressed at those times. Undated pages and community reproductions are identified separately. This register includes the relevant evidence verified for this statement; further verified records may be incorporated in later revisions.
+
+Source 1. Mats Persson, RPGWatch / MMOWatch interview. October 7, 2008. Player skill and interaction; guild trade and war; protection for miners; early usefulness to friends.
+https://rpgwatch.com/games/mortal-online-327/articles/mortal-online-interview-101.html
+
+Source 2. Star Vault interview with Mats Persson and Henrik Nyström, GameSource. April 2, 2009. Manual auctions and gathering places; communication; complementary skills; agreements and betrayal; early participation in guild activity.
+https://www.gamesource.it/editoriali/mortal-online-intervista-esclusiva/
+
+Source 3. Mats Persson, MMORPG.com Introductory Interview, page 1. September 7, 2009. Interaction as a design test; player skill; immersion; early participation; specialized craftspeople.
+https://www.mmorpg.com/interviews/introductory-interview-2000081392?amp=true
+
+Source 4. Mats Persson, MMORPG.com Introductory Interview, page 2. September 7, 2009. Player-administered consequences; guild membership and property permissions; group training; trade and caravan protection.
+https://www.mmorpg.com/interviews/introductory-interview-2000081392&page=2&amp=true
+
+Source 5. MO1 Official FAQ, preserved by the community on Mortal Online Wiki. Original publication date unverified. Reproduced developer text links trade, learning, rumors, and alliances to communication; describes complementary characters and player-created activity. Historical intentions, not a current mechanics guide.
+https://mowiki.fandom.com/wiki/Official_FAQ
+
+Source 6. Massively / Engadget interview with Henrik Nyström. January 27, 2012. Combat-focused players depend on other playstyles for a working economy and a broader range of activity.
+https://www.engadget.com/2012-01-27-some-assembly-required-a-mortal-online-interview.html
+
+Source 7. Star Vault, Mortal Online basic game information. Undated surviving page; accessed October 12, 2026. Guild keeps, alliances, diplomacy, and political control alongside crafting, combat, magic, and trade.
+https://mortalonline.squarespace.com/
+
+Source 8. Star Vault, Mortal Online Steam description. Undated current text; Steam release listed August 31, 2015; accessed October 12, 2026. Guild construction, defended cities, and collective siege warfare. The Steam release date does not establish the first publication date of this wording.
+https://store.steampowered.com/app/287920/Mortal_Online/
+
+Source 9. Henrik Nyström, Wccftech MO2 interview. June 6, 2020. Player interaction as a core pillar; years of player-driven content; the importance of the first hours for newcomers.
+https://wccftech.com/mortal-online-2-qa-still-hardcore-but-much-more-accessible-beautiful-and-large/amp/
+
+Source 10. MyrmexThraxvágr, Champions Tournament announcement. February 18, 2021. Player precedent: MÝRVIKINGS, Chronicles of Nave Discord coordination, published rules, and a Challonge bracket. Evidence of an announced organization, not verification of its final results.
+https://mortalonline2.com/forums/threads/mortal-online-2-combat-beta-the-champions-tournament.1334/
+
+Source 11. Suttner, Events recruitment and community-hub announcement. August 30, 2021; edited January 24, 2022. Player precedent: public job boards, training, contractors, caravan protection, judging, and event security. The post describes its own program.
+https://mortalonline2.com/forums/threads/events.2747/
+
+Source 12. Robmo, Star Vault staff, Introducing Community Scenarios. April 13, 2022. Staff-created situations intended to prompt player interaction, decisions, and recorded outcomes; continued participation depends on community interest.
+https://mortalonline2.com/forums/threads/introducing-community-scenarios.7063/
+
+Source 13. Star Vault, Into the Vault #154. February 18, 2026. Explicit invitation to player-run events at Tindrem Arena, alongside official events and planned automated features.
+https://www.mortalonline2.com/into-the-vault-154-sprint-16-ptr-date-announcement
+
+Source 14. Star Vault, Sprint 16 PTR patch notes. February 26, 2026. Arena bankers, red priests, and sentries presented for public testing as support for official and player-hosted events.
+https://www.mortalonline2.com/patch-notes-sprint-16-ptr
+
+Source 15. Star Vault, Grand Gathering of Tindrem Arena announcement. March 7, 2026. Invitation to converse, duel, and share crafted goods in an arena described as supporting official and community events.
+https://www.mortalonline2.com/event-announcement-grand-gathering-at-tindrem-arena
+
+Source 16. Star Vault, Mortal Online 2 official homepage. Undated current text; accessed October 12, 2026. Players build settlements and trade routes, wage war, keep peace, and protect others.
+https://www.mortalonline2.com/
+
+Source 17. Star Vault, Mortal Online 2 official FAQ. Undated current text; accessed October 12, 2026. Individual reputation, guilds and empires, core player housing, and the economic importance of regional resources and trade routes.
+https://www.mortalonline2.com/faq/

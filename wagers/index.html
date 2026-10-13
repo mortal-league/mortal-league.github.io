@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#000000" />
     <meta name="referrer" content="no-referrer" />
     <meta name="robots" content="index,follow" />
-    <meta name="description" content="Prepare a Mortal League siege, scrim, or objective declaration with gold, Standing, middler choices, and optional Standing Double Jeopardy." />
-    <title>Declarations and Wagers | Mortal League Beta</title>
+    <meta name="description" content="Prepare a local Mortal League siege, scrim, or objective declaration. Wagers remain disabled throughout Beta." />
+    <title>Event Declarations | Mortal League Beta</title>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../community/community.css" />
     <link rel="stylesheet" href="./wagers.css" />
@@ -15,7 +15,7 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to declarations and wagers</a>
+    <a class="skip-link" href="#main">Skip to event declarations</a>
     <header class="site-header">
       <a class="brand" href="../" aria-label="Mortal League Beta home"><span><strong>Mortal League Beta</strong></span></a>
       <nav aria-label="League navigation"><a href="../">Home</a><a href="../mortal-online-2/">MO2 League</a><a href="../mortal-online-1/">MO1 League</a><a href="../league/">League</a><a href="../community/">Community</a><a href="../ideas/">Idea Lot</a><a href="../tools/">Tools</a><a href="../rules/">Rulebook</a><a href="../about/">About</a></nav>
@@ -25,18 +25,18 @@
     <main class="community-shell wager-shell" id="main">
       <section class="community-hero wager-hero">
         <div>
-          <p class="eyebrow">Challenge desk</p>
+          <p class="eyebrow">Event desk</p>
           <h1>Declare the fight.</h1>
-          <p>Prepare a Siege, Scrim, or Objective declaration. Add the gold and Standing you are willing to wager, select preferred middlers, and set the terms. Mortal League Beta does not accept, hold, settle, or transfer wagers.</p>
-          <div class="button-row"><a class="primary-button" href="#declaration-type">Start a declaration</a><a class="secondary-button" href="#wager-rules">Read wager rules</a></div>
+          <p>Prepare a Siege, Scrim, or Objective declaration with proposed teams, timing, victory conditions, proof, and cancellation terms. Wagers, stakes, middlers, and Standing Double Jeopardy remain disabled throughout Mortal League Beta.</p>
+          <div class="button-row"><a class="primary-button" href="#declaration-type">Start a declaration</a><a class="secondary-button" href="#declaration-rules">Read declaration flow</a></div>
         </div>
         <aside class="status-panel">
           <strong>Beta connection status</strong>
           <span>Local declaration drafts: open</span>
           <span>Shared submissions: not connected</span>
-          <span>Middler acceptance: not connected</span>
-          <span>Gold or item custody: unavailable</span>
-          <span>Live wagers: closed during Beta</span>
+          <span>Event acceptance: not connected</span>
+          <span>Gold and Standing stakes: disabled</span>
+          <span>Middlers and Double Jeopardy: disabled</span>
         </aside>
       </section>
 
@@ -59,58 +59,36 @@
           <h2 id="form-title">Build the declaration</h2>
         </div>
         <form class="form-panel declaration-form" id="declaration-form">
-          <div class="form-banner"><span class="connection-label">Saved on this device</span><p>Nothing entered here is sent to Mortal League, Star Vault, another guild, or a middler.</p></div>
+          <div class="form-banner"><span class="connection-label">Saved on this device for up to 24 hours</span><p>Nothing entered here is sent to Mortal League, Star Vault, another guild, or a referee.</p></div>
 
           <fieldset>
             <legend>Parties and event</legend>
             <div class="form-grid">
-              <label>Declaring guild or side<input name="declaringSide" type="text" required autocomplete="off" /></label>
-              <label>Authorized representative<input name="declaringRepresentative" type="text" required autocomplete="off" /></label>
-              <label>Challenged guild or side<input name="challengedSide" type="text" required autocomplete="off" /></label>
-              <label>Challenged representative<input name="challengedRepresentative" type="text" autocomplete="off" placeholder="If known" /></label>
+              <label>Declaring guild or side<input name="declaringSide" type="text" maxlength="80" required autocomplete="off" /></label>
+              <label>Authorized representative<input name="declaringRepresentative" type="text" maxlength="80" required autocomplete="off" /></label>
+              <label>Challenged guild or side<input name="challengedSide" type="text" maxlength="80" required autocomplete="off" /></label>
+              <label>Challenged representative<input name="challengedRepresentative" type="text" maxlength="80" autocomplete="off" placeholder="If known" /></label>
               <label>Game<select name="game" required><option value="">Choose one</option><option>Mortal Online 2</option><option>Mortal Online 1</option></select></label>
               <label>Continent<select name="continent" required><option value="">Choose one</option><option>Myrland</option><option>Sarducaa</option><option>Both</option></select></label>
-              <label class="full-width"><span id="event-label">Siege target and terms</span><textarea id="event-details" name="eventDetails" required placeholder="Name the structure or position, attacker and defender roles, siege window, eligible forces, and victory condition."></textarea></label>
-              <label>Proposed event time<input name="eventTime" type="text" required placeholder="Date, time, and time zone" /></label>
-              <label>Acceptance deadline<input name="acceptanceDeadline" type="text" required placeholder="Date, time, and time zone" /></label>
+              <label class="full-width"><span id="event-label">Siege target and terms</span><textarea id="event-details" name="eventDetails" maxlength="2000" required placeholder="Name the structure or position, attacker and defender roles, siege window, eligible forces, and victory condition."></textarea></label>
+              <label>Proposed event time<input name="eventTime" type="text" maxlength="120" required placeholder="Date, time, and time zone" /></label>
+              <label>Acceptance deadline<input name="acceptanceDeadline" type="text" maxlength="120" required placeholder="Date, time, and time zone" /></label>
             </div>
           </fieldset>
 
-          <fieldset class="stake-fieldset">
-            <legend>Gold and Standing wager</legend>
-            <p class="field-intro">Enter what the declaring side is willing to risk. The challenged side accepts, declines, or counters after shared submissions open.</p>
-            <div class="stake-grid">
-              <label><span>Gold wager</span><input id="gold-stake" name="goldStake" type="number" min="0" step="1" inputmode="numeric" value="0" required /><small>Whole gold. Mortal League does not hold gold during Beta.</small></label>
-              <label><span>Standing wager</span><div class="standing-input"><input id="standing-stake" name="standingStake" type="number" min="0" max="500" step="1" inputmode="numeric" value="0" required /><strong>/ 500</strong></div><small>Hard maximum for the base Standing stake.</small></label>
-            </div>
-
-            <div class="jeopardy-control">
-              <label class="toggle-row" for="double-jeopardy">
-                <span class="toggle-copy"><strong>Standing Double Jeopardy</strong><small>Add the declared Standing stake again for every eligible friendly death.</small></span>
-                <input id="double-jeopardy" name="doubleJeopardy" type="checkbox" role="switch" aria-describedby="jeopardy-exposure" />
-                <span class="toggle-track" aria-hidden="true"><span></span></span>
-              </label>
-              <button class="info-button" id="open-jeopardy-info" type="button" aria-controls="double-jeopardy-info" aria-haspopup="dialog">i<span class="visually-hidden"> Explain Standing Double Jeopardy</span></button>
-            </div>
-
-            <div class="exposure-panel" id="jeopardy-exposure" aria-live="polite">
-              <span>Standing exposure</span>
-              <strong id="exposure-formula">0 points</strong>
-              <p id="exposure-note">Double Jeopardy is off. The declared Standing stake is the maximum Standing at risk.</p>
-            </div>
-          </fieldset>
+          <section class="beta-locked-panel" aria-labelledby="beta-wager-title">
+            <p class="eyebrow">Beta lock</p>
+            <h3 id="beta-wager-title">Wager terms are unavailable.</h3>
+            <p>Gold stakes, Standing stakes, middlers, custody, settlement, and Standing Double Jeopardy are not part of Mortal League Beta. This builder creates event terms only.</p>
+          </section>
 
           <fieldset>
-            <legend>Middlers and settlement terms</legend>
+            <legend>Proof, referee, and cancellation terms</legend>
             <div class="form-grid">
-              <label>First-choice middler<input name="middlerFirst" type="text" placeholder="Verified middler name" /></label>
-              <label>Second-choice middler<input name="middlerSecond" type="text" placeholder="Different verified middler" /></label>
-              <label>Third-choice middler<input name="middlerThird" type="text" placeholder="Third verified middler" /></label>
-              <label>Middler role<select name="middlerRole"><option>Middler only</option><option>Referee and middler</option></select></label>
-              <label class="full-width">Proof and referee terms<textarea name="proofTerms" required placeholder="State accepted evidence, referee authority, eligible deaths, exclusions, and the decision record."></textarea></label>
-              <label class="full-width">Cancellation and return terms<textarea name="cancellationTerms" required placeholder="State when the event may be cancelled, rescheduled, forfeited, or returned without settlement."></textarea></label>
+              <label class="full-width">Proof and referee terms<textarea name="proofTerms" maxlength="2000" required placeholder="State accepted evidence, referee authority, eligible deaths, exclusions, and the decision record."></textarea></label>
+              <label class="full-width">Cancellation and rescheduling terms<textarea name="cancellationTerms" maxlength="2000" required placeholder="State when the event may be cancelled, rescheduled, or forfeited."></textarea></label>
               <label class="check-row"><input name="authority" type="checkbox" required /><span>I am authorized to prepare this declaration for the declaring side.</span></label>
-              <label class="check-row"><input name="betaAcknowledgment" type="checkbox" required /><span>I understand this creates a local draft only. No wager, challenge, gold, item, or Standing has been submitted or accepted.</span></label>
+              <label class="check-row"><input name="betaAcknowledgment" type="checkbox" required /><span>I understand this creates a local draft only. No event, challenge, proof, or agreement has been submitted or accepted.</span></label>
             </div>
           </fieldset>
 
@@ -125,28 +103,20 @@
         </section>
       </section>
 
-      <section class="wager-rules" id="wager-rules" aria-labelledby="rules-title">
-        <div><p class="eyebrow">Before acceptance</p><h2 id="rules-title">The wager needs a record.</h2></div>
+      <section class="wager-rules" id="declaration-rules" aria-labelledby="rules-title">
+        <div><p class="eyebrow">Before acceptance</p><h2 id="rules-title">The event needs a record.</h2></div>
         <ol>
-          <li><strong>Declare</strong><span>One authorized side states the event, base stakes, deadlines, and optional Double Jeopardy.</span></li>
+          <li><strong>Declare</strong><span>One authorized side states the event, format, victory conditions, and deadlines.</span></li>
           <li><strong>Review</strong><span>The challenged side accepts, declines, or issues a counter-declaration.</span></li>
-          <li><strong>Assign</strong><span>Both sides confirm one middler and any separate referee before custody begins.</span></li>
-          <li><strong>Lock</strong><span>The final record fixes eligible deaths, proof, cancellation terms, and settlement authority.</span></li>
-          <li><strong>Settle</strong><span>The middler follows the accepted record and the final referee ruling. This service is closed during Beta.</span></li>
+          <li><strong>Assign</strong><span>Both sides confirm any neutral referee before the event begins.</span></li>
+          <li><strong>Lock</strong><span>The final record fixes eligible forces, proof, exclusions, and cancellation terms.</span></li>
+          <li><strong>Report</strong><span>After connected services open, one event record will cover the result and any objection.</span></li>
         </ol>
       </section>
 
-      <section class="notice-panel feature-section"><h2>Middlers and referees</h2><p>A middler may hold and transfer agreed stakes without accepting referee duties. A referee who also serves as middler must meet both role standards and disclose the combined role. First, second, and third choices identify three different people. No person becomes a middler or referee merely because a draft names them.</p></section>
+      <section class="notice-panel feature-section"><h2>Referees</h2><p>A draft may propose a neutral referee, but no person becomes a referee merely because a declaration names them. Connected acceptance, assignments, proof, objections, and rulings remain closed until the League service passes its launch checks.</p></section>
     </main>
 
-    <dialog class="info-dialog" id="double-jeopardy-info" aria-labelledby="jeopardy-title">
-      <div class="dialog-heading"><div><p class="eyebrow">Optional wager term</p><h2 id="jeopardy-title">Standing Double Jeopardy</h2></div><button class="dialog-close" id="close-jeopardy-info" type="button" aria-label="Close explanation">×</button></div>
-      <p>Double Jeopardy adds one extra copy of a side’s declared Standing stake for every eligible friendly death that side suffers during the accepted event.</p>
-      <div class="example-box"><strong>Example</strong><span>Base Standing stake: 100</span><span>Eligible friendly deaths: 3</span><span>Total Standing exposure: 100 + (100 × 3) = 400</span></div>
-      <p>The 500-point limit applies to the base Standing stake. Double Jeopardy may raise final exposure above 500. The accepted event record must define an eligible death, the scoring window, duplicate-death limits, exclusions, and the proof standard before the wager is locked.</p>
-      <button class="primary-button" id="acknowledge-jeopardy" type="button">I understand</button>
-    </dialog>
-
-    <footer><strong>Declarations and Wagers</strong><span>No wagers during Mortal League Beta. Drafts stay on this device.</span></footer>
+    <footer><strong>Event Declarations</strong><span>No wagers during Mortal League Beta. Local drafts expire after 24 hours.</span></footer>
   </body>
 </html>

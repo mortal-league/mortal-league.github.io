@@ -4,6 +4,7 @@
   const DIRECTORY_URL = "./guilds.json";
   const STORAGE_KEY = "mortal-league-guild-application-v1";
   const REGISTRATION_STORAGE_KEY = "mortal-league-guild-registration-v1";
+  const MAX_DRAFT_AGE = 24 * 60 * 60 * 1000;
   const directory = document.querySelector("#guild-directory");
   const count = document.querySelector("#directory-count");
   const search = document.querySelector("#guild-search");
@@ -84,21 +85,30 @@
   }
 
   function saveForm() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(formObject()));
-    status.textContent = "Draft saved on this device.";
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ savedAt: Date.now(), data: formObject() }));
+      status.textContent = "Draft saved on this device for up to 24 hours.";
+    } catch (_) {
+      status.textContent = "Local saving is unavailable in this browser.";
+    }
   }
 
   function restoreForm() {
     try {
       const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
       if (!saved) return;
-      Object.entries(saved).forEach(([name, value]) => {
+      if (!saved.savedAt || Date.now() - saved.savedAt > MAX_DRAFT_AGE || !saved.data) {
+        localStorage.removeItem(STORAGE_KEY);
+        status.textContent = "An older application draft was cleared under the 24-hour privacy limit.";
+        return;
+      }
+      Object.entries(saved.data).forEach(([name, value]) => {
         const control = form.elements.namedItem(name);
         if (!control) return;
         if (control.type === "checkbox") control.checked = value === "on";
         else control.value = value;
       });
-      status.textContent = "Local draft restored.";
+      status.textContent = "Local draft restored. It will expire 24 hours after its last edit.";
     } catch (_) {
       localStorage.removeItem(STORAGE_KEY);
     }
@@ -134,21 +144,30 @@
   }
 
   function saveRegistration() {
-    localStorage.setItem(REGISTRATION_STORAGE_KEY, JSON.stringify(registrationObject()));
-    registrationStatus.textContent = "Registration draft saved on this device.";
+    try {
+      localStorage.setItem(REGISTRATION_STORAGE_KEY, JSON.stringify({ savedAt: Date.now(), data: registrationObject() }));
+      registrationStatus.textContent = "Registration draft saved on this device for up to 24 hours.";
+    } catch (_) {
+      registrationStatus.textContent = "Local saving is unavailable in this browser.";
+    }
   }
 
   function restoreRegistration() {
     try {
       const saved = JSON.parse(localStorage.getItem(REGISTRATION_STORAGE_KEY) || "null");
       if (!saved) return;
-      Object.entries(saved).forEach(([name, value]) => {
+      if (!saved.savedAt || Date.now() - saved.savedAt > MAX_DRAFT_AGE || !saved.data) {
+        localStorage.removeItem(REGISTRATION_STORAGE_KEY);
+        registrationStatus.textContent = "An older registration draft was cleared under the 24-hour privacy limit.";
+        return;
+      }
+      Object.entries(saved.data).forEach(([name, value]) => {
         const control = registrationForm.elements.namedItem(name);
         if (!control) return;
         if (control.type === "checkbox") control.checked = value === "on";
         else control.value = value;
       });
-      registrationStatus.textContent = "Local registration draft restored.";
+      registrationStatus.textContent = "Local registration draft restored. It will expire 24 hours after its last edit.";
     } catch (_) {
       localStorage.removeItem(REGISTRATION_STORAGE_KEY);
     }
@@ -212,8 +231,12 @@
     status.textContent = "Local draft cleared.";
   });
   document.querySelector("#copy-application").addEventListener("click", async () => {
-    await navigator.clipboard.writeText(output.textContent);
-    status.textContent = "Draft copied.";
+    try {
+      await navigator.clipboard.writeText(output.textContent);
+      status.textContent = "Draft copied.";
+    } catch (_) {
+      status.textContent = "Copying was blocked. Select the draft text and copy it manually.";
+    }
   });
   document.querySelector("#download-application").addEventListener("click", () => download("mortal-league-guild-application.txt", output.textContent));
 
@@ -234,8 +257,12 @@
     registrationStatus.textContent = "Local registration draft cleared.";
   });
   document.querySelector("#copy-registration").addEventListener("click", async () => {
-    await navigator.clipboard.writeText(registrationOutput.textContent);
-    registrationStatus.textContent = "Registration draft copied.";
+    try {
+      await navigator.clipboard.writeText(registrationOutput.textContent);
+      registrationStatus.textContent = "Registration draft copied.";
+    } catch (_) {
+      registrationStatus.textContent = "Copying was blocked. Select the draft text and copy it manually.";
+    }
   });
   document.querySelector("#download-registration").addEventListener("click", () => download("mortal-league-guild-registration.txt", registrationOutput.textContent));
 

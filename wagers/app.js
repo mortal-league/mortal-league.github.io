@@ -2,12 +2,8 @@
   "use strict";
 
   const STORAGE_KEY = "mortal-league-declaration-draft-v1";
+  const MAX_DRAFT_AGE = 24 * 60 * 60 * 1000;
   const form = document.querySelector("#declaration-form");
-  const standingStake = document.querySelector("#standing-stake");
-  const goldStake = document.querySelector("#gold-stake");
-  const doubleJeopardy = document.querySelector("#double-jeopardy");
-  const exposureFormula = document.querySelector("#exposure-formula");
-  const exposureNote = document.querySelector("#exposure-note");
   const declarationInputs = document.querySelectorAll('input[name="declarationType"]');
   const eventLabel = document.querySelector("#event-label");
   const eventDetails = document.querySelector("#event-details");
@@ -15,7 +11,6 @@
   const resultTitle = document.querySelector("#result-title");
   const output = document.querySelector("#declaration-text");
   const status = document.querySelector("#declaration-status");
-  const dialog = document.querySelector("#double-jeopardy-info");
 
   const typeCopy = {
     Siege: {
@@ -36,11 +31,6 @@
     return String(value || "").trim();
   }
 
-  function number(value, maximum) {
-    const parsed = Math.max(0, Math.floor(Number(value) || 0));
-    return typeof maximum === "number" ? Math.min(parsed, maximum) : parsed;
-  }
-
   function declarationType() {
     return document.querySelector('input[name="declarationType"]:checked')?.value || "Siege";
   }
@@ -55,27 +45,10 @@
     eventDetails.placeholder = typeCopy[type].placeholder;
   }
 
-  function updateExposure() {
-    const stake = number(standingStake.value, 500);
-    standingStake.value = String(stake);
-    goldStake.value = String(number(goldStake.value));
-
-    if (doubleJeopardy.checked && stake > 0) {
-      exposureFormula.textContent = `${stake} + (${stake} × friendly deaths)`;
-      exposureNote.textContent = `Every eligible friendly death adds ${stake} Standing. The 500-point cap applies to the base stake, so final exposure may exceed 500.`;
-    } else if (doubleJeopardy.checked) {
-      exposureFormula.textContent = "Set a Standing stake";
-      exposureNote.textContent = "Double Jeopardy is on, but a 0-point Standing stake creates no additional exposure.";
-    } else {
-      exposureFormula.textContent = `${stake} point${stake === 1 ? "" : "s"}`;
-      exposureNote.textContent = "Double Jeopardy is off. The declared Standing stake is the maximum Standing at risk.";
-    }
-  }
-
   function save() {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(formObject()));
-      status.textContent = "Draft saved on this device.";
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ savedAt: Date.now(), data: formObject() }));
+      status.textContent = "Draft saved on this device for up to 24 hours.";
     } catch (_) {
       status.textContent = "Local saving is unavailable in this browser.";
     }
@@ -85,7 +58,12 @@
     try {
       const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
       if (!saved) return;
-      Object.entries(saved).forEach(([name, value]) => {
+      if (!saved.savedAt || Date.now() - saved.savedAt > MAX_DRAFT_AGE || !saved.data) {
+        localStorage.removeItem(STORAGE_KEY);
+        status.textContent = "An older local draft was cleared under the 24-hour privacy limit.";
+        return;
+      }
+      Object.entries(saved.data).forEach(([name, value]) => {
         const controls = form.elements.namedItem(name);
         if (!controls) return;
         if (controls instanceof RadioNodeList) {
@@ -96,7 +74,7 @@
           controls.value = value;
         }
       });
-      status.textContent = "Local draft restored.";
+      status.textContent = "Local draft restored. It will expire 24 hours after its last edit.";
     } catch (_) {
       localStorage.removeItem(STORAGE_KEY);
     }
@@ -104,15 +82,10 @@
 
   function buildDraft(data) {
     const type = clean(data.declarationType) || "Siege";
-    const standing = number(data.standingStake, 500);
-    const jeopardy = data.doubleJeopardy === "on";
-    const jeopardyTerms = jeopardy
-      ? `ENABLED. Base stake ${standing} + (${standing} × eligible friendly deaths). Final exposure may exceed 500.`
-      : "DISABLED. Base Standing stake is the maximum Standing exposure.";
 
     return [
       `MORTAL LEAGUE ${type.toUpperCase()} DECLARATION DRAFT`,
-      "This draft was created on the declaring side's device. Nothing was submitted, accepted, held, or transferred.",
+      "This draft was created on the declaring side's device. Nothing was submitted or accepted.",
       "",
       `Declaration type: ${type}`,
       `Declaring side: ${clean(data.declaringSide)}`,
@@ -127,26 +100,16 @@
       typeCopy[type].label.toUpperCase(),
       clean(data.eventDetails),
       "",
-      "DECLARING SIDE'S OFFERED STAKES",
-      `Gold: ${number(data.goldStake)}`,
-      `Base Standing: ${standing} of 500 maximum`,
-      `Standing Double Jeopardy: ${jeopardyTerms}`,
-      "",
-      "MIDDLER PREFERENCES",
-      `First choice: ${clean(data.middlerFirst) || "Not provided"}`,
-      `Second choice: ${clean(data.middlerSecond) || "Not provided"}`,
-      `Third choice: ${clean(data.middlerThird) || "Not provided"}`,
-      `Requested role: ${clean(data.middlerRole)}`,
-      "",
       "PROOF AND REFEREE TERMS",
       clean(data.proofTerms),
       "",
-      "CANCELLATION AND RETURN TERMS",
+      "CANCELLATION AND RESCHEDULING TERMS",
       clean(data.cancellationTerms),
       "",
       "Authority confirmation: Confirmed by the draft creator.",
       "Beta acknowledgment: Confirmed by the draft creator.",
-      "Status: LOCAL DRAFT ONLY. Live declarations, wagers, custody, and settlement remain closed during Beta.",
+      "Beta wager status: Gold, Standing, middlers, custody, settlement, and Double Jeopardy are disabled.",
+      "Status: LOCAL DRAFT ONLY. Connected declarations and acceptance remain closed until launch checks pass.",
     ].join("\n");
   }
 
@@ -160,7 +123,6 @@
 
   function handleInput() {
     updateType();
-    updateExposure();
     save();
   }
 
@@ -169,7 +131,6 @@
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    updateExposure();
     if (!form.reportValidity()) return;
     const type = declarationType();
     output.textContent = buildDraft(formObject());
@@ -186,12 +147,15 @@
     output.textContent = "";
     status.textContent = "Local draft cleared.";
     updateType();
-    updateExposure();
   });
 
   document.querySelector("#copy-declaration").addEventListener("click", async () => {
-    await navigator.clipboard.writeText(output.textContent);
-    status.textContent = "Declaration draft copied.";
+    try {
+      await navigator.clipboard.writeText(output.textContent);
+      status.textContent = "Declaration draft copied.";
+    } catch (_) {
+      status.textContent = "Copying was blocked. Select the draft text and copy it manually.";
+    }
   });
 
   document.querySelector("#download-declaration").addEventListener("click", () => {
@@ -199,14 +163,6 @@
     download(`mortal-league-${type}-declaration.txt`, output.textContent);
   });
 
-  document.querySelector("#open-jeopardy-info").addEventListener("click", () => dialog.showModal());
-  document.querySelector("#close-jeopardy-info").addEventListener("click", () => dialog.close());
-  document.querySelector("#acknowledge-jeopardy").addEventListener("click", () => dialog.close());
-  dialog.addEventListener("click", (event) => {
-    if (event.target === dialog) dialog.close();
-  });
-
   restore();
   updateType();
-  updateExposure();
 })();
