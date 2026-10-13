@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Mortal League Weekly is a source-linked report on Mortal Online population signals, patches, incidents, promotions, community conditions, and league consequences." />
+    <title>Mortal League Weekly</title>
+    <link rel="alternate" type="application/rss+xml" title="Mortal League Weekly" href="./feed.xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./weekly.css" />
+    <script src="../mascot.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to Mortal League Weekly</a>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Mortal League Beta home"><span><strong>Mortal League Beta</strong></span></a>
+      <nav aria-label="League navigation"><a href="../">Home</a><a href="../mortal-online-2/">MO2</a><a href="../mortal-online-1/">MO1</a><a href="../league/">League</a><a href="../community/">Community</a><a href="./" aria-current="page">Weekly</a><a href="../ideas/">Idea Lot</a><a href="../tools/">Tools</a><a href="../rules/">Rulebook</a></nav>
+      <span class="status-chip"><span></span> Weekly public report</span>
+    </header>
+
+    <main class="weekly-shell" id="main">
+      <section class="weekly-hero" aria-labelledby="weekly-title">
+        <div>
+          <p class="eyebrow">Population · patches · incidents · promotions · consequences</p>
+          <h1 id="weekly-title">Mortal League Weekly</h1>
+          <p class="weekly-lede">A source-linked report on what changed, what the available numbers actually measure, and what those changes mean for players trying to organize long-term play.</p>
+          <div class="weekly-actions"><a class="primary-button" href="./issues/001/">Read Issue 001</a><a class="secondary-button" href="#archive">Browse archive</a><a class="secondary-button" href="./feed.xml">RSS feed</a></div>
+        </div>
+        <aside class="weekly-manifesto">
+          <span>Reporting rule</span>
+          <strong>Sources first.<br />Consequences second.</strong>
+          <p>No single population snapshot, review score, survey, outage report, or promotion explains the condition of a persistent world.</p>
+        </aside>
+      </section>
+
+      <section class="current-issue" aria-labelledby="current-title">
+        <div class="current-number"><span>Issue</span><strong>001</strong><small>October 12, 2026</small></div>
+        <div class="current-copy"><p class="eyebrow">Current issue</p><h2 id="current-title">The numbers need context.</h2><p>A Steam population snapshot, a 50-percent promotion, recent review pressure, the announced Era of Refinement PTR, unresolved Free Haven questions, and the consequences for community-run league tools.</p><ul><li>Every metric states its platform and measurement window.</li><li>Announcements stay separate from shipped changes.</li><li>DDoS, outage, maintenance, sale, and PTR windows receive explicit controls.</li></ul><a class="primary-button" href="./issues/001/">Read this week</a></div>
+      </section>
+
+      <section class="reporting-standard" aria-labelledby="standard-title">
+        <div class="standard-heading"><p class="eyebrow">Reading the labels</p><h2 id="standard-title">Four kinds of claim.</h2><p>Every newsletter item carries a label so evidence and judgment do not blur together.</p></div>
+        <div class="label-grid">
+          <article><span class="claim-label verified">Verified fact</span><h3>A source records it.</h3><p>The issue links the source, date, platform, measurement window, and important limits.</p></article>
+          <article><span class="claim-label announced">Announced plan</span><h3>A responsible party said it.</h3><p>The statement remains a plan until a later source confirms that it shipped or happened.</p></article>
+          <article><span class="claim-label interpretation">Interpretation</span><h3>The evidence supports a reading.</h3><p>The issue names the inference and keeps it separate from the underlying facts.</p></article>
+          <article><span class="claim-label unknown">Unknown</span><h3>The public record does not settle it.</h3><p>The issue states the missing evidence instead of converting rumor into a conclusion.</p></article>
+        </div>
+      </section>
+
+      <section class="archive-section" id="archive" aria-labelledby="archive-title">
+        <div class="archive-heading"><div><p class="eyebrow">Permanent record</p><h2 id="archive-title">Issue archive</h2></div><p>Weekly issues keep their own URLs. Corrections should be dated and preserved inside the affected issue.</p></div>
+        <div class="archive-tools">
+          <label>Search issues<input id="archive-search" type="search" placeholder="Population, patch, reviews, Free Haven" autocomplete="off" /></label>
+          <label>Topic<select id="archive-topic"><option value="">Every topic</option><option>Population</option><option>Development</option><option>Promotions</option><option>Reviews</option><option>Incidents</option><option>League</option></select></label>
+        </div>
+        <p class="archive-status" id="archive-status" role="status">Loading archive...</p>
+        <div class="issue-grid" id="issue-grid" aria-live="polite" aria-busy="true">
+          <article class="issue-card"><span class="issue-card-number">001</span><p class="eyebrow">October 12, 2026</p><h3>The numbers need context.</h3><p>Population, promotion, reviews, development, Free Haven, and league consequences.</p><a href="./issues/001/">Read Issue 001</a></article>
+        </div>
+      </section>
+
+      <section class="delivery-section" aria-labelledby="delivery-title">
+        <div><p class="eyebrow">Delivery status</p><h2 id="delivery-title">The archive is open. The mailing list is not.</h2></div>
+        <div><p>Email and Discord delivery are not connected. Mortal League will not collect addresses or send notifications until subscriber storage, consent, unsubscribe handling, and delivery ownership are secure.</p><p>The public RSS feed works without collecting personal information.</p><a class="secondary-button" href="./feed.xml">Open RSS feed</a></div>
+      </section>
+
+      <section class="newsletter-boundary"><strong>Independent reporting boundary</strong><p>Mortal League Weekly is an independent community publication. It is not a Star Vault statement, service, moderation channel, or approval. Official game rules, account matters, security reports, and private evidence belong in the appropriate official channel.</p></section>
+    </main>
+
+    <footer><strong>Mortal League Weekly</strong><span><a href="../about/">About</a> · Independent community reporting</span></footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Mortal League Weekly</title>
+    <link>https://mortal-league.github.io/weekly/</link>
+    <description>Source-linked weekly reporting on Mortal Online population signals, patches, incidents, promotions, community conditions, and league consequences.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Oct 2026 20:30:00 -0700</lastBuildDate>
+    <item>
+      <title>Issue 001: The numbers need context.</title>
+      <link>https://mortal-league.github.io/weekly/issues/001/</link>
+      <guid isPermaLink="true">https://mortal-league.github.io/weekly/issues/001/</guid>
+      <pubDate>Mon, 12 Oct 2026 20:30:00 -0700</pubDate>
+      <description>Population, promotion, reviews, development, Free Haven, incident controls, and league consequences.</description>
+    </item>
+  </channel>
+</rss>

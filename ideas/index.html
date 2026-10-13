@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="A curated public board for Mortal Online bug reports, game feedback, and community ideas, ranked by player likes." />
+    <title>Idea Parking Lot | Mortal League Beta</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./ideas.css" />
+    <script src="../mascot.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the Idea Parking Lot</a>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Mortal League Beta home"><span><strong>Mortal League Beta</strong></span></a>
+      <nav aria-label="League navigation"><a href="../">Home</a><a href="../mortal-online-2/">MO2 League</a><a href="../mortal-online-1/">MO1 League</a><a href="../league/">League</a><a href="../community/">Community</a><a href="./" aria-current="page">Idea Lot</a><a href="../tools/">Tools</a><a href="../rules/">Rulebook</a><a href="../about/">About</a></nav>
+      <span class="status-chip"><span></span> Curated public board</span>
+    </header>
+
+    <main class="ideas-shell" id="main">
+      <section class="ideas-hero" aria-labelledby="ideas-title">
+        <div class="ideas-intro">
+          <p class="eyebrow">Player feedback, visibly parked</p>
+          <h1 id="ideas-title">Idea Parking Lot</h1>
+          <p class="ideas-lede">A public, moderator-curated grid for game bugs and useful feedback. Like the posts that matter to you. The most-liked approved posts move toward the front automatically.</p>
+          <div class="hero-buttons">
+            <a class="primary-button" href="https://github.com/mortal-league/mortal-league.github.io/issues/new?template=idea-lot.yml" rel="external">Park a new post</a>
+            <a class="secondary-button" href="#parking-grid">Browse the lot</a>
+          </div>
+        </div>
+        <aside class="lot-sign" aria-label="Idea Parking Lot totals">
+          <span class="lot-sign-label">Open spaces</span>
+          <div class="lot-stats">
+            <div><strong id="post-count">0</strong><span>approved posts</span></div>
+            <div><strong id="like-count">0</strong><span>total likes</span></div>
+            <div><strong id="bug-count">0</strong><span>bug reports</span></div>
+            <div><strong id="feedback-count">0</strong><span>feedback posts</span></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="lot-rules" aria-label="How the Idea Parking Lot works">
+        <article><span>01</span><h2>Players post</h2><p>Use the short public form. Do not include private reports, personal information, exploit instructions, or security details.</p></article>
+        <article><span>02</span><h2>Mods curate</h2><p>Site moderators review submissions for clarity, duplicates, safety, and fit before approving them for this board.</p></article>
+        <article><span>03</span><h2>Likes lift</h2><p>Only positive likes count. Popular sorting uses public thumbs-up reactions and moves the most-liked posts to the front.</p></article>
+      </section>
+
+      <section class="parking-board" aria-labelledby="board-title">
+        <div class="board-heading">
+          <div>
+            <p class="eyebrow">Approved posts</p>
+            <h2 id="board-title">The lot</h2>
+          </div>
+          <p>Likes are public GitHub thumbs-up reactions. Opening a post to like or comment requires a free GitHub account.</p>
+        </div>
+
+        <div class="lot-toolbar" aria-label="Filter and sort posts">
+          <label class="search-field">Search the lot<input id="idea-search" type="search" placeholder="Search titles and summaries" autocomplete="off" /></label>
+          <label>Post type<select id="type-filter"><option value="">All posts</option><option value="Bug report">Bug reports</option><option value="Game feedback">Game feedback</option><option value="Site feedback">Site feedback</option><option value="Community idea">Community ideas</option></select></label>
+          <label>Game<select id="game-filter"><option value="">MO1 and MO2</option><option value="Mortal Online 2">Mortal Online 2</option><option value="Mortal Online 1">Mortal Online 1</option><option value="Both games">Both games</option><option value="Mortal League">Mortal League</option></select></label>
+          <label>Order<select id="sort-filter"><option value="popular">Most liked</option><option value="newest">Newest</option><option value="discussed">Most discussed</option></select></label>
+        </div>
+
+        <p class="board-status" id="board-status" role="status">Loading approved posts...</p>
+        <div class="idea-grid" id="parking-grid" aria-live="polite" aria-busy="true"></div>
+      </section>
+
+      <section class="submit-strip" aria-labelledby="submit-title">
+        <div><p class="eyebrow">Have something useful?</p><h2 id="submit-title">Park it for review.</h2><p>One clear problem or suggestion per post. Good reports explain what happened, what you expected, how to reproduce it, and why the change matters.</p></div>
+        <a class="primary-button" href="https://github.com/mortal-league/mortal-league.github.io/issues/new?template=idea-lot.yml" rel="external">Create a public post</a>
+      </section>
+
+      <section class="moderation-note" aria-labelledby="moderation-title">
+        <h2 id="moderation-title">Moderation and scope</h2>
+        <p>The Idea Parking Lot is a community board, not an official Star Vault support channel. Approval here does not mean Star Vault has seen, accepted, or promised to act on a post. Account problems, cheating reports, security issues, harassment, and private evidence belong in the appropriate official or private reporting route. Site moderators may merge duplicates, edit labels, return unclear submissions, or remove unsafe content.</p>
+        <div class="note-links"><a href="../exploits/">Exploit guidance</a><a href="../safety/">Safety reporting</a><a href="https://github.com/mortal-league/mortal-league.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22idea-lot%3Aapproved%22" rel="external">View approved source posts</a></div>
+      </section>
+    </main>
+
+    <footer><strong>Idea Parking Lot</strong><span>Positive likes only. Moderator approval required.</span></footer>
+  </body>
+</html>

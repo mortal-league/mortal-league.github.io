@@ -1,0 +1,81 @@
+name: Idea Parking Lot submission
+description: Submit a public game bug report or feedback post for moderator review.
+title: "[Idea Lot] "
+labels:
+  - "idea-lot:pending"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the community record. This submission is public on GitHub immediately, but it will appear on the Idea Parking Lot only after a site moderator approves it.
+
+        Do not post private evidence, account information, personal information, exploit instructions, active security problems, harassment reports, or cheating accusations here. Use the appropriate official or private reporting route instead.
+  - type: dropdown
+    id: post-type
+    attributes:
+      label: Post type
+      options:
+        - Bug report
+        - Game feedback
+        - Site feedback
+        - Community idea
+    validations:
+      required: true
+  - type: dropdown
+    id: game
+    attributes:
+      label: Game
+      options:
+        - Mortal Online 2
+        - Mortal Online 1
+        - Both games
+        - Mortal League
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: State the problem or idea in two or three clear sentences.
+      placeholder: What should another player understand at a glance?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What is happening or what should change?
+      description: Give enough context for players and moderators to understand the post.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: For a bug, list the shortest safe steps that reproduce it. Leave out exploit instructions and private data. For feedback, write Not applicable.
+      placeholder: |
+        1. Go to...
+        2. Use...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why this matters
+      description: Explain the player impact or the outcome your idea would improve.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Links or evidence
+      description: Optional public links only. Do not include personal information, private proof, accusations, or active exploit details.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety and privacy check
+      options:
+        - label: I confirm that this public post contains no personal information, private evidence, harassment report, cheating accusation, or active exploit instructions.
+          required: true
+        - label: I understand that moderators may merge duplicates, edit labels, request clarification, or decline this post.
+          required: true

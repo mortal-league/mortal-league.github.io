@@ -1,0 +1,12 @@
+{
+  "issues": [
+    {
+      "number": 1,
+      "date": "October 12, 2026",
+      "title": "The numbers need context.",
+      "summary": "Population, promotion, reviews, development, Free Haven, incident controls, and league consequences.",
+      "topics": ["Population", "Development", "Promotions", "Reviews", "Incidents", "League"],
+      "url": "./issues/001/"
+    }
+  ]
+}
